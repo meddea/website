@@ -1,3 +1,1 @@
-## MeDDEa
-
-Data has a better idea
+![MeDDEa coming soon!](/meddea_vertical.png "MeDDEa Solutions Ag")
