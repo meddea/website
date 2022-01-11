@@ -1,0 +1,49 @@
+.contact-us {
+  background-image: url("../img/photo03_form-contact.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-us__max-width {
+  padding: 0 36px;
+}
+
+@media (min-width: 768px) {
+  .contact-us__max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .contact-us__max-width {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1240px) {
+.contact-us__address {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+.contact-us__address address {
+  font-style: normal;
+}
+
+.contact-us__address address a {
+  display: block;
+  padding: 8px;
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+.contact-us__address-spacer {
+  padding-bottom: 16px;
+}

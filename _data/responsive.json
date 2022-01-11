@@ -1,0 +1,9 @@
+{
+  "MEDIA": {
+    "phone": 600,
+    "tablet": 768,
+    "laptop": 1240,
+    "desktop": 1440
+  },
+  "GAP": 8
+}

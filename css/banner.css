@@ -1,0 +1,27 @@
+.banner {
+    background-image: url("../img/photo02.png");
+}
+
+.banner__max-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .banner__max-width {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .banner__max-width {
+        max-width: 550px;
+    }
+}
+
+.banner__max-width .button {
+    margin: 0 auto;
+}

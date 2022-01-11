@@ -1,0 +1,88 @@
+{
+  "Primary" : {
+    "100": {
+      "color" : "#EEF6FF",
+      "label" : "#000000"
+    },
+    "200": {
+      "color" : "#D8EBFF",
+      "label" : "#000000"
+    },
+    "300": {
+      "color" : "#BBDDFF",
+      "label" : "#000000"
+    },
+    "500": {
+      "color" : "#2962FF",
+      "label" : "#FFFFFF"
+    },
+    "700": {
+      "color" : "#0E4D8D",
+      "label" : "#FFFFFF"
+    }
+  },
+  "Background" : {
+    "color" : "#FFFFFF",
+    "label" : "#000000"
+  },
+  "Surface" : {
+    "color" : "#FFFFFF",
+    "label" : "#000000"
+  },
+  "Border" : {
+    "color" : "#F0F0F0",
+    "label" : "#000000"
+  },
+  "Error" : {
+    "color" : "#A4262C",
+    "label" : "#FFFFFF"
+  },
+  "On Primary" : {
+    "color" : "#FFFFFF",
+    "label" : "#000000"
+  },
+  "On Background" : {
+    "color" : "#000000",
+    "label" : "#FFFFFF"
+  },
+  "On Surface" : {
+    "On Surface" : {
+      "color" : "#000000",
+      "label" : "#FFFFFF"
+    },
+    "On Surface Third" : {
+      "color" : "#131313",
+      "label" : "#FFFFFF"
+    },
+    "On Surface Secondary" : {
+      "color" : "#939A9C",
+      "label" : "#FFFFFF"
+    }
+  },
+  "On Error" : {
+    "color" : "#FFFFFF",
+    "label" : "#000000"
+  },
+  "Gray" : {
+    "100" : {
+        "color" : "#F5F5F5",
+        "label" : "#000000" 
+    },
+    "200" : {
+        "color" : "#C4C4C4",
+        "label" : "#000000" 
+    },
+    "400" : {
+      "color" : "#C0C0C0",
+      "label" : "#000000" 
+    },
+    "800" : {
+        "color" : "#4C4C52",
+        "label" : "#FFFFFF" 
+    },
+    "900" : {
+      "color" : "#2C2C2F",
+      "label" : "#FFFFFF" 
+    }
+  }
+}

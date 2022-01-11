@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+    <title>{{ title }}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/responsive/max-width.css">
+  <link rel="stylesheet" href="/css/responsive/responsive.css">
+  <link rel="stylesheet" href="/css/responsive/container.css">
+  <link rel="stylesheet" href="/css/responsive/buffer.css">
+  <link rel="stylesheet" href="/css/typography.css">
+  <link rel="stylesheet" href="/css/picture.css">
+  <link rel="stylesheet" href="/css/spacers.css">
+  <link rel="stylesheet" href="/css/utils.css">
+  <link rel="stylesheet" href="/css/services.css">
+  <link rel="stylesheet" href="/css/accordion-item.css">
+  <link rel="stylesheet" href="/css/banner.css">
+  <link rel="stylesheet" href="/css/button-2.css">
+  <link rel="stylesheet" href="/css/accordion.css">
+
+  <!-- Menu -->
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/ui-kit.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  {% include 'partials/js-detect.njk' %}
+</head>
+<body>
+  {% include 'partials/header.njk' %}
+    {% max_width max_width %}
+      {% responsive %}
+        {% container containers, "100_100_100_45_45" %}
+          <picture>
+            <source
+              media="(min-width: 1240px)"
+              srcset="/img/bg-subpage-desktop.png">
+            <source
+              media="(min-width: 768px)"
+              srcset="/img/bg-subpage-tablet.png">
+            <source
+              srcset="/img/bg-subpage-mobile.png">
+            <img
+              src="/img/bg-subpage-mobile.png" alt="" width="377" height="236">
+          </picture>
+        {% end_container %}
+        {% container containers, "100_100_100_55_55" %}
+        <div class="accordion-container">
+          <div class="accordion-spacer-top"></div>
+          <div class="accordion-item">
+            <div class="accordion-item__inner">
+              {% buffer %}
+                <h2 class="accordion__title">
+                  Consulting<br>
+                  services
+                </h2>
+              {% end_buffer %}
+              <div class="accordion-item__spacer-inner-1"></div>
+              <p>
+                  The world's leading consultants in building Dynamic Data Economy components. Well boost your team with know-how, point in the right direction and show technical implementation so you can ebenfit from truly decentralized data economy solutions without losing focus on your core business.
+              </p>
+              <ul>
+                <li>
+                  Decentralized Goverance
+                </li>
+                <li>
+                  Decentralized Identity
+                </li>
+                <li>
+                  Decentralized Semantic
+                </li>
+              </ul>
+              <div class="accordion-item__spacer-inner-2"></div>
+            </div>
+            <div class="accordion-item__spacer-bottom"></div>
+          </div>
+          <div class="accordion-spacer-bottom"></div>
+        </div>
+        {% end_container %}
+      {% end_responsive %}
+    {% end_max_width %}
+    <div class="banner">
+      <section>
+        <div class="banner__spacer-top"></div>
+        <div class="banner__max-width">
+          <h2 class="h3 text-center text-white">
+          Do you need individual <span class="font-weight-600">meeting or consultation?</span>
+          </h2>
+          <div class="spacer-16"></div>
+          <div class="mt-auto mx-auto">
+            {% buffer %}
+              <a class="button-2" href="#">Contact Us</a>
+            {% end_buffer %}
+          </div>
+        </div>
+        <div class="banner__spacer-bottom"></div>
+      </section>
+    </div>
+  <!-- Header -->
+  <script src="/js/utils.js"></script>
+  <script src="/js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "default": {
+    "padding": 8
+  },
+  "max_width": {
+    "padding": 36,
+    "phone": {
+      "padding": 50
+    },
+    "tablet": {
+      "padding": 120
+    },
+    "laptop": {
+      "padding": 120
+    },
+    "desktop": { 
+      "padding": 120
+    }
+  }
+}

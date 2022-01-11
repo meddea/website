@@ -1,0 +1,142 @@
+{
+  "100_50_33_33_33": {
+    "default": 1,
+    "phone": 0.50,
+    "tablet": 0.33333,
+    "laptop": 0.33333,
+    "desktop": 0.33333
+  },
+  "100_100_40_40_40": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 0.4,
+    "laptop": 0.4,
+    "desktop": 0.4
+  },
+  "100_100_100_40_40": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 0.4,
+    "desktop": 0.4
+  },
+  "100_100_60_60_60": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 0.6,
+    "laptop": 0.6,
+    "desktop": 0.6
+  },
+  "100_100_100_60_60": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 0.6,
+    "desktop": 0.6
+  },
+  "100_100_100_50_50": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 0.5,
+    "desktop": 0.5
+  },
+  "100_100_50_50_50": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 0.5,
+    "laptop": 0.5,
+    "desktop": 0.5
+  },
+  "100_50_50_50_50": {
+    "default": 1,
+    "phone": 0.5,
+    "tablet": 0.5,
+    "laptop": 0.5,
+    "desktop": 0.5
+  },
+  "100_100_33_33_33": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 0.33,
+    "laptop": 0.33,
+    "desktop": 0.33
+  },
+  "100_50_100_100_100": {
+    "default": 1,
+    "phone": 0.5,
+    "tablet": 1,
+    "laptop": 1,
+    "desktop": 1
+  },
+  "100_100_100_100_100": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 1,
+    "desktop": 1
+  },
+  "100_50_25_25_25": {
+    "default": 1,
+    "phone": 0.5,
+    "tablet": 0.25,
+    "laptop": 0.25,
+    "desktop": 0.25
+  },
+  "100_50_40_40_40": {
+    "default": 1,
+    "phone": 0.5,
+    "tablet": 0.4,
+    "laptop": 0.4,
+    "desktop": 0.4
+  },
+  "100_50_60_60_60": {
+    "default": 1,
+    "phone": 0.5,
+    "tablet": 0.6,
+    "laptop": 0.6,
+    "desktop": 0.6
+  },
+  "100_100_50_40_40": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 0.5,
+    "laptop": 0.4,
+    "desktop": 0.4
+  },
+  "100_100_50_60_60": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 0.5,
+    "laptop": 0.6,
+    "desktop": 0.6
+  },
+  "100_100_100_35_35": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 0.35,
+    "desktop": 0.35
+  },
+  "100_100_100_65_65": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 0.65,
+    "desktop": 0.65
+  },
+  "100_100_100_45_45": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 0.45,
+    "desktop": 0.45
+  },
+  "100_100_100_55_55": {
+    "default": 1,
+    "phone": 1,
+    "tablet": 1,
+    "laptop": 0.55,
+    "desktop": 0.55
+  }
+}

@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  z-index: 2;
+  background-image: url("../img/banner-1.png");
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero {
+    background-size: auto 100%;
+    background-position: top left 41vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero {
+    background-position: top left 144%;
+  }
+}
+
+.hero__inner {
+  background-color: #FFFFFF;
+}
+
+@media (min-width: 1240px) {
+  .hero__inner {
+    background-color: transparent;
+  }
+}
+
+.hero__spacer-top {
+  padding-top: 240px;
+}
+
+@media (min-width: 768px) {
+  .hero__spacer-top {
+    padding-top: 440px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero__spacer-top {
+    padding-top: 90px;
+  }
+}
+
+.hero__content {
+  padding: 36px;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero__content {
+    padding-left: 120px;
+    padding-right: 150px;
+  }
+}
+
+
+@media (min-width: 1240px) {
+  .hero__content {
+    padding-left: 120px;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="header">
+{% buffer buffer, "max_width"%}
+  <header>
+    <div class="header__container max-width">
+      <div class="header__logo logo" role="banner">
+        <a href="/">
+        {% set alt = site.name + " logo" %}
+          <img src="/img/logo.png" alt="{{alt}}" width="300" height="124">
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+      <div class="header__main-menu-container" id="main-menu-container">
+        {% include '../../node_modules/elements/_includes/partials/menu.njk' %}
+      </div>
+    </div>
+  </header>
+  {% end_buffer %}
+</div>

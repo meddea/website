@@ -1,0 +1,73 @@
+---
+permalink: css/typography.css
+---
+
+<%- include("../node_modules/elements/_includes/css/typography.css.ejs"); %>
+
+.font-weight-600 {
+    font-weight: 600;
+}
+  
+.font-weight-800 {
+    font-weight: 800;
+}
+
+.side-border-title {
+    position: relative;
+    padding-left: 30px;
+}
+
+.side-border-title::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 9px;
+    height: 85%;
+    background-color: #3E95F7;
+}
+
+.side-border-title h1,
+.side-border-title h2 {
+    padding: 0;
+}
+
+.side-border-title--sub::before {
+    top: 10px;
+    height: 135px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+ul {
+    list-style: none;
+}
+
+
+ul li {
+    position: relative;
+}
+
+ul li::before {
+    position: absolute;
+    top: 6px;
+    left: -9px;
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: <%= colors['On Surface']['On Surface Third'].color %>;
+    border-radius: 50%;
+}
+
+@media(min-width: <%= responsive.MEDIA.phone %>px) {
+    ul li::before {
+        top: 13px;
+    }
+}

@@ -1,0 +1,31 @@
+.field {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    font-size: 24px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+.field::placeholder {
+    color: #FFFFFF;
+  }
+
+textarea.field {
+    min-height: 145px;
+}
+
+@media (min-width: 768px) {
+    textarea.field {
+        min-height: 210px;
+    } 
+}
+
+
+@media (min-width: 1240px) {
+    textarea.field {
+        min-height: 300px;
+    } 
+}

@@ -1,0 +1,27 @@
+.button-2 {
+    display: inline-block;
+    min-width: 100px;
+    min-height: 20px;
+    border: 0;
+    background-color: transparent;
+    background-image: url("../img/button-white.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.svg .button-2 {
+    background-image: url("../img/button-white.svg");
+}
+
+.button-2:hover {
+    text-decoration: underline;
+}
+
+.button-2:active {
+    color: #CCCCCC;
+}

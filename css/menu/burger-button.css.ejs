@@ -1,0 +1,62 @@
+
+.burger-button {
+  width: 18px;
+  height: 12px;
+  padding: 13px 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,<%- include("../../img/buttons/burger-base64.svg.ejs"); %>");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 12px;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+
+@media(min-width: <%= responsive.MEDIA.tablet %>px) {
+    .burger-button {
+        width: 58px;
+        height: 51px;
+        background-size: 40px 30px;
+    }
+}
+
+.burger-button--opened {
+    background-image: url("data:image/svg+xml;base64,<%- include("../../img/buttons/cross-base64.svg.ejs"); %>");
+}
+
+.burger-button:hover,
+.burger-button.hover {
+    background-color: <%= colors['Gray']['100'].color%>;
+}
+
+.burger-button:focus,
+.burger-button.focus {
+    border-color: <%= colors['On Surface']['On Surface'].color%>;
+    outline: none;
+}
+
+.burger-button:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.burger-button:focus-visible,
+.burger-button.focus-visible {
+    border-color: <%= colors['On Surface']['On Surface'].color%>;
+    outline: none;
+}
+
+.burger-button:disabled,
+.burger-button.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.burger-button:active,
+.burger-button.active {
+    background-color: <%= colors['Gray']['200'].color%>;
+    outline: none;
+    border-color: transparent;
+}

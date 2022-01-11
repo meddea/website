@@ -1,0 +1,68 @@
+---
+permalink: css/header.css
+---
+
+<%- include("../../node_modules/elements/_includes/css/header/simple/ie5.css.ejs"); %>
+<%- include("../../node_modules/elements/_includes/css/header/simple/ie7.css"); %>
+<%- include("../../node_modules/elements/_includes/css/header/simple/ie8.css"); %>
+<%- include("../../node_modules/elements/_includes/css/header/simple/mobile.css.ejs"); %>
+<%- include("../../node_modules/elements/_includes/css/header/simple/flex.css.ejs"); %>
+
+<%- include("../menu/main-menu__link.css.ejs"); %>
+<%- include("../menu/main-menu__link--current.css.ejs"); %>
+<%- include("../menu/burger-button.css.ejs"); %>
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .header {
+    padding-top: 90px;
+    padding-bottom: 24px;
+  }
+}
+
+.header__container {
+  align-items: start;
+}
+
+.main-menu li::before{
+  content: none;
+}
+
+.main-menu__item {
+  padding: 0 23px;
+}
+
+.logo a {
+  padding: 0;
+}
+
+.logo a img {
+  max-width: 115px;
+  width: 100%;
+}
+
+@media(min-width: 768px) {
+  .logo a img {
+    max-width: 300px;
+  }
+}
+
+.header {
+  border-bottom: 0;
+}
+
+.header__main-menu-burger {
+  margin-top: auto;
+  margin-bottom: auto;
+}

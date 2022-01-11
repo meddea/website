@@ -1,0 +1,37 @@
+/* main menu link */
+
+.main-menu__link {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.main-menu__link:hover,
+.main-menu__link.hover {
+  background-color: <%= colors.Gray['100'].color%>;
+  text-decoration: none;
+}
+
+.main-menu__link:active,
+.main-menu__link.active {
+  background-color: <%= colors.Gray['200'].color%>;
+  outline: none;
+}
+
+.main-menu__link:focus,
+.main-menu__link.focus {
+  border-color: <%= colors.Primary['500'].color%>;
+  outline: none;
+}
+
+.main-menu__link:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.main-menu__link:focus-visible {
+  border-color: <%= colors.Primary['500'].color%>;
+  outline: none;
+}
