@@ -133,13 +133,21 @@ module.exports = {
       'padding' : `10px 15px`,
       'font-family': `${FONT_FAMILY}`,
       'font-weight': '400',
-      'font-size' : '20px',
-      'line-height': '23px',
+      'font-size' : '14px',
+      'line-height': '18px',
       'letter-spacing': '0',
       'letter-spacing': '0',
       'text-decoration': 'none',
       'text-transform': 'uppercase',
       'color': ON_SURFACE_COLOR
+    },
+    'phone' : {
+      'font-size' : '16px',
+      'line-height': '20px'
+    },
+    'tablet' : {
+      'font-size' : '20px',
+      'line-height': '23px'
     }
   },
   ".label": {

@@ -1,0 +1,62 @@
+---
+permalink: js/accordion.js
+---
+
+(function() {
+    var controlsParrents = document.getElementsByClassName('accordion__control-parrent');
+    var controls = document.getElementsByClassName('accordion__control');
+    var panels = document.getElementsByClassName('accordion__panel');
+  
+    function setNewAccordion(controlParrent, control, item) {
+      if (!event) { // If browser is IE8, or older the event object is a global property (window.event) and not an argument of the handler.
+        event = window.event;
+      }
+  
+      var previousActiveControlParrent = document.getElementsByClassName('accordion__control-parrent--active')[0];
+      var previousActiveControl = document.getElementsByClassName('accordion__control--active')[0];
+      var previousActiveItem = document.getElementsByClassName('accordion__panel--active')[0];
+  
+      if(!(previousActiveControl.getAttribute('id') === control.getAttribute('id'))) {
+        window.classFunction.removeClass(previousActiveControlParrent, 'accordion__control-parrent--active');
+        window.classFunction.removeClass(previousActiveControl, 'accordion__control--active');
+        window.classFunction.removeClass(previousActiveItem, 'accordion__panel--active');
+        previousActiveControl.removeAttribute('aria-disabled');
+        previousActiveControl.setAttribute('aria-expanded', 'false');
+  
+        window.classFunction.addClass(controlParrent, 'accordion__control-parrent--active');
+        window.classFunction.addClass(control, 'accordion__control--active');
+        window.classFunction.addClass(item, 'accordion__panel--active');
+        previousActiveControl.setAttribute('aria-disabled', 'true');
+        control.setAttribute('aria-expanded', 'true');
+      }
+    }
+  
+    function addControllClickHandler(controls, controlsParent, control, item, i) {
+      control.onclick = function() {
+        setNewAccordion(controlsParent, control, item);
+      };
+  
+      control.onkeydown = function() {
+        var keyCode = event.keyCode || event.which;
+  
+        if(keyCode === Keycode.SPACE || keyCode === Keycode.ENTER) {
+          setNewAccordion(controlsParent, control, item);
+        }
+  
+      }
+    }
+  
+    for(var i = 0; i < controls.length; i++) {
+      controls[i].removeAttribute('disabled');
+  
+      if(i === 0) {
+        window.classFunction.addClass(controlsParrents[i], 'accordion__control-parrent--active');
+        window.classFunction.addClass(controls[i], 'accordion__control--active');
+        window.classFunction.addClass(panels[i], 'accordion__panel--active');
+      } else {
+        controls[i].setAttribute('aria-expanded', 'false');
+        controls[i].removeAttribute('aria-disabled');
+      }
+      addControllClickHandler(controls, controlsParrents[i], controls[i], panels[i], i);
+    }
+  })();

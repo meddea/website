@@ -1,0 +1,28 @@
+.accordion__control {
+    color: #3D95F7;
+    border: 1px solid transparent;
+}
+
+.accordion__control:hover {
+    text-decoration: underline;
+}
+
+
+.accordion__control:active {
+    color: #2d6fb9;
+}
+
+.accordion__control:focus {
+    border-color: #3D95F7;
+    outline: none;
+}
+
+.accordion__control:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.accordion__control:focus-visible {
+    border-color: #3D95F7;
+    outline: none;
+}

@@ -42,6 +42,7 @@
   padding: 8px;
   color: #bfbfbf;
   text-decoration: none;
+  max-width: 400px;
 }
 
 .contact-us__address-spacer {

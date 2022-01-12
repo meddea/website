@@ -15,6 +15,7 @@
 
 textarea.field {
     min-height: 145px;
+    resize: vertical;
 }
 
 @media (min-width: 768px) {

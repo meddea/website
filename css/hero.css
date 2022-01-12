@@ -76,3 +76,7 @@
     padding-right: 0;
   }
 }
+
+.hero__content h1 {
+  max-width: 500px;
+}

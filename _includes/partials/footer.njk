@@ -1,0 +1,42 @@
+<div class="footer">
+<footer>
+{% max_width max_width %}
+{% buffer buffer, "max_width" %}
+<div class="footer__spacer-top"></div>
+
+{% responsive %}
+{% container containers, "100_100_100_50_50" %}
+{% responsive %}
+<ul class="float-left responsive list-reset align-items-center">
+<li class="float-left">
+{% buffer %}
+<a href="#" class="social-link" aria-label="Facebook">
+<img src="/img/facebook.png" width="34" height="34" alt="Facebook logo">
+</a>
+{% end_buffer %}
+</li>
+<li class="float-left">
+{% buffer %}
+<a href="#" class="social-link" aria-label="Instagram">
+<img src="/img/instagram.png" width="34" height="34" alt="Instagram logo">
+</a>
+{% end_buffer %}
+</li>
+</ul>
+<h2 class="float-left p text-white">Meddea Solutions</h2>
+
+{% end_responsive %}
+{% end_container %}
+
+{% container containers, "100_100_100_50_50" %}
+<p class="footer__copyright">
+2021 Copyrights & Protected
+</p>
+{% end_container %}
+{% end_responsive %}
+
+<div class="footer__spacer-bottom"></div>
+{% end_buffer %}
+{% end_max_width %}
+</footer>
+</div>
