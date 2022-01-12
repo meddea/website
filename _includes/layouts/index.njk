@@ -35,13 +35,6 @@
     {% include 'partials/js-detect.njk' %}
   </head>
   <body>
-    <h1>
-      {{ example }}
-    </h1>
-    {% for el in a_list  %}
-    <p>{{el.name}}</p>
-    <p>{{el.smth_else}}</p>
-    {% endfor %}
     {% include 'partials/header.njk' %}
     {{ content | safe }}
 

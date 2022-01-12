@@ -26,3 +26,20 @@
     border-color: #3D95F7;
     outline: none;
 }
+
+.accordion__control {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .accordion__control {
+        font-size : 22px;
+    }
+}
+
+@media (min-width: 1240px) {
+    .accordion__control {
+        font-size : 26px;
+    }
+}

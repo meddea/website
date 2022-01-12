@@ -43,6 +43,72 @@ ${elements.end_responsive.call(this)}
   return template;
 }
 
+function services(title, accent, cards) {
+  let cardsString = ``;
+  for (cardItem of cards) {
+cardsString += `
+${elements.container.call(this, containers, "100_100_50_50_50")}
+<div class="card">
+<div class="card__spacer-top"></div>
+<div class="card__inner">
+<h3 class="h2">
+${cardItem.title}
+</h3>
+<div class="card__spacer-inner-1"></div>
+<p>
+${cardItem.text}
+</p>
+<div class="card__spacer-inner-2"></div>
+<div class="mt-auto">
+${elements.buffer.call(this, buffer)}
+<a class="button-1" href="${cardItem.link}">${cardItem.linkText}</a>
+${elements.end_buffer.call(this)}
+</div>
+</div>
+<div class="card__spacer-bottom"></div>
+</div>
+${elements.end_container.call(this)}
+`;
+}
+
+
+  let template = `
+  <div class="services">
+  <section>
+  <div class="services__bg"></div>
+  <div class="services__spacer-top"></div>
+  ${elements.responsive.call(this)}
+  ${elements.container.call(this, containers, "100_100_50_40_40")}
+  ${elements.end_container.call(this)}
+  ${elements.container.call(this, containers, "100_100_50_60_60")}
+  <div class="side-border-title side-border-title--sub">
+  <h2 class="h1">${title} <span class="font-weight-800">${accent}</span></h2>
+  </div>
+  ${elements.end_container.call(this)}
+  ${elements.end_responsive.call(this)}
+  <div class="services__spacer-inner-1"></div>
+  ${elements.responsive.call(this)}
+  ${elements.container.call(this, containers, "100_100_100_40_40")}
+  ${elements.end_container.call(this)}
+  ${elements.container.call(this, containers, "100_100_100_60_60")}
+  <div class="services__content">
+  
+  ${elements.responsive.call(this)}
+  
+  ${cardsString}
+  
+  ${elements.end_responsive.call(this)}
+  
+  </div>
+  ${elements.end_container.call(this)}
+  ${elements.end_responsive.call(this)}
+  <div class="services__spacer-bottom"></div>
+  </section>
+  </div>
+  `
+    return template;
+  }
+
 function proposal(title, text1, text2,) {
   let template = `
   ${elements.max_width.call(this, maxWidth)}
@@ -221,4 +287,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("proposal", proposal);
   eleventyConfig.addShortcode("card", card);
   eleventyConfig.addShortcode("contact_us", contact_us);
+  eleventyConfig.addShortcode("services", services);
+
 }

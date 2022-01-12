@@ -1,6 +1,6 @@
 ---
 layout: layouts/subpage.njk
-title: subpage
+title: meddea - what we offer
 ---
 
 {% max_width max_width %}

@@ -1,57 +1,36 @@
 ---
 layout: layouts/index.njk
-title: Index
-example: ble ble bla bla
-a_list:
-  - name: consulting
-    smth_else: blah
-  - name: code
-    smth_else: bleh
+title: meddea
+heading:
+  subtitle: Comming Up with Creative Solutions
+  text: We care for your
+  accent: lorem ipsum dolores
+card_list:
+  - title: Consulting services
+    text: The world's leading consultants in building Dynamic Data Economy components.
+    linkText: Read more
+    link: #
+  - title: Code and Architecture services
+    text: Our experts reviews ensure your systems would meet highest security standards, data protection regulation.
+    linkText: Read more
+    link: #
+  - title: Development
+    text: A trusted pair of hands to make sure that you can leverage power of DDE in your products.
+    linkText: Read more
+    link: #
+  - title: Training
+    text: The world's leading consultants in building Dynamic Data Economy components.
+    linkText: Read more
+    link: #
 ---
 
 
 {% max_width max_width %}
 
-{% hero "Comming Up with Creative Solutions", "We care for your", "lorem ipsum dolores", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Read More", "#" %}
+{% hero heading.subtitle, heading.text, heading.accent, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Read More", "#" %}
 
-<div class="services">
-<section>
-<div class="services__bg"></div>
-<div class="services__spacer-top"></div>
-{% responsive %}
-{% container containers, "100_100_50_40_40" %}
-{% end_container %}
-{% container containers, "100_100_50_60_60" %}
-<div class="side-border-title side-border-title--sub">
-<h2 class="h1">The service<br> you <span class="font-weight-800">will get</span></h2>
-</div>
-{% end_container %}
-{% end_responsive %}
-<div class="services__spacer-inner-1"></div>
-{% responsive %}
-{% container containers, "100_100_100_40_40" %}
-{% end_container %}
-{% container containers, "100_100_100_60_60" %}
-<div class="services__content">
-{% responsive %}
-{% card "Consulting services", "The world's leading consultants in building Dynamic Data Economy components.", "Read more", "#" %}
-{% card "Code and Architecture services", "Our experts reviews ensure your systems would meet highest security standards, data protection regulation.", "Read more", "#" %}
-{% container containers, "100_100_100_100_100" %}
-<div class="services__spacer-inner-2"></div>
-{% end_container %}
-{% card "Development", "A trusted pair of hands to make sure that you can leverage power of DDE in your products.", "Read more", "#" %}
-{% card "Training", "The world's leading consultants in building Dynamic Data Economy components.", "Read more", "#" %}
+{% services "The service you", "will get", card_list %}
 
-{% card "Training", "The world's leading consultants in building Dynamic Data Economy components.", "Read more", "#" %}
-
-{% end_responsive %}
-
-</div>
-{% end_container %}
-{% end_responsive %}
-<div class="services__spacer-bottom"></div>
-</section>
-</div>
 {% end_max_width %}
 
 {% banner 'Do you need individual', 'meeting or consultation?', 'Contact Us', '#' %}
