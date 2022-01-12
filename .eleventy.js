@@ -3,6 +3,47 @@ const containers = require("./_data/containers.json");
 const maxWidth = require("./_data/max_width.json");
 const buffer = require("./_data/buffer.json");
 
+function accordion(title, i, ...content) {
+const contentParts = [];
+
+for(item of content) {
+
+  if(typeof item === 'string') {
+    contentParts.push(`<p>${item}</p>`)
+  }
+
+  if(Array.isArray([item]) && typeof item !== 'string') {
+    const list = [];
+    for(li of item) {
+      list.push(`<li>${li}</li>`);
+    }
+    const listString = `<ul>${list.join('\n')}</ul>`
+
+    contentParts.push(listString);
+  }
+}
+
+const contentString = contentParts.join('\n');
+
+let template = `
+<div class="accordion__control-parrent responsive">
+<h2 class="accordion__title">
+${title}
+</h2>
+<button class="accordion__control" type="button" disabled="disabled" aria-disabled="true" aria-expanded="true" aria-controls="accordion-panel-${i}" id="accordion-control-${i}">
+Read more
+</button>
+</div>
+<div class="accordion__panel" id="accordion-panel-${i}" role="region" aria-labelledby="accordion-control-${i}">
+<div class="accordion-item__spacer-inner-1"></div>
+${contentString}
+<div class="accordion-item__spacer-inner-2"></div>
+</div>
+`
+
+  return template;
+}
+
 function hero(subtitle, title, accent, text, linkText, link) {
 let template = `
 <div class="hero">
@@ -167,33 +208,6 @@ ${elements.end_max_width.call(this)}`
   return template;
 }
 
-function card(title, text, linkText, link) {
-let template = `
-${elements.container.call(this, containers, "100_100_50_50_50")}
-<div class="card">
-<div class="card__spacer-top"></div>
-<div class="card__inner">
-<h3 class="h2">
-${title}
-</h3>
-<div class="card__spacer-inner-1"></div>
-<p>
-${text}
-</p>
-<div class="card__spacer-inner-2"></div>
-<div class="mt-auto">
-${elements.buffer.call(this, buffer)}
-<a class="button-1" href="${link}">${linkText}</a>
-${elements.end_buffer.call(this)}
-</div>
-</div>
-<div class="card__spacer-bottom"></div>
-</div>
-${elements.end_container.call(this)}`
-
-  return template;
-}
-
 function contact_us(title, buttonText, subtitle, address, link) {
   let template = `
   <div class="contact-us">
@@ -285,8 +299,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("hero", hero);
   eleventyConfig.addShortcode("banner", banner);
   eleventyConfig.addShortcode("proposal", proposal);
-  eleventyConfig.addShortcode("card", card);
   eleventyConfig.addShortcode("contact_us", contact_us);
   eleventyConfig.addShortcode("services", services);
-
+  eleventyConfig.addShortcode("accordion", accordion);
 }

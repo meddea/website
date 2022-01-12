@@ -30,7 +30,32 @@
 </head>
 <body>
   {% include 'partials/header.njk' %}
+  {% max_width max_width %}
+  {% responsive %}
+  {% container containers, "100_100_100_45_45" %}
+  <picture>
+    <source media="(min-width: 1240px)" srcset="/img/bg-subpage-desktop.png">
+    <source media="(min-width: 768px)" srcset="/img/bg-subpage-tablet.png">
+    <source srcset="/img/bg-subpage-mobile.png">
+    <img src="/img/bg-subpage-mobile.png" alt="" width="377" height="236">
+  </picture>
+  {% end_container %}
+  {% container containers, "100_100_100_55_55" %}
+  <div class="accordion-container">
+  <div class="accordion-spacer-top"></div>
+  <div id="accordion" class="accordion">
+  {% for accordion in accordion__list %}
+    {% accordion accordion.title, loop.index, accordion.text, accordion.list %}
+  {% endfor %}
+  </div>
+  <div class="accordion-spacer-bottom"></div>
+  </div>
+  {% end_container %}
+  {% end_responsive %}
+  {% end_max_width %}
+
   {{ content | safe }}
+
   <!-- Header -->
   <script src="/js/utils.js"></script>
   <script src="/js/menu.js"></script>
