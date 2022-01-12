@@ -1,6 +1,12 @@
 ---
 layout: layouts/index.njk
 title: Index
+example: ble ble bla bla
+a_list:
+  - name: consulting
+    smth_else: blah
+  - name: code
+    smth_else: bleh
 ---
 
 
