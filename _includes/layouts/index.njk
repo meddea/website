@@ -36,6 +36,62 @@
   </head>
   <body>
     {% include 'partials/header.njk' %}
+    {% max_width max_width %}
+
+    {% hero heading.subtitle, heading.text, heading.accent, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Read More", "#" %}
+
+    <div class="services">
+      <section>
+        <div class="services__bg"></div>
+        <div class="services__spacer-top"></div>
+        {% responsive %}
+        {% container containers, "100_100_50_40_40" %}
+        {% end_container %}
+        {% container containers, "100_100_50_60_60" %}
+        <div class="side-border-title side-border-title--sub">
+          <h2 class="h1">
+            {% markdown %}{{ services_title }} {% endmarkdown %}
+          </h2>
+        </div>
+        {% end_container %}
+        {% end_responsive %}
+        <div class="services__spacer-inner-1"></div>
+        {% responsive %}
+        {% container containers, "100_100_100_40_40" %}
+        {% end_container %}
+        {% container containers, "100_100_100_60_60" %}
+        <div class="services__content">
+          {% responsive %}
+          {% for card in cards_list %}
+          {% container containers, "100_100_50_50_50" %}
+          <div class="card">
+            <div class="card__spacer-top"></div>
+            <div class="card__inner">
+              <h3 class="h2">
+                {{ card.title }}
+              </h3>
+              <div class="card__spacer-inner-1"></div>
+              <p>{{ card.text }}</p>
+              <div class="card__spacer-inner-2"></div>
+              <div class="mt-auto">
+                {% buffer %}
+                <a class="button-1" href="#">{{buttons.read_more}}</a>
+                {% end_buffer %}
+              </div>
+            </div>
+            <div class="card__spacer-bottom"></div>
+          </div>
+          {% end_container %}
+          {% endfor %}
+          {% end_responsive %}
+        </div>
+        {% end_container %}
+        <div class="card__spacer-bottom"></div>
+      </section>
+    </div>
+
+    {% end_max_width %}
+
     {{ content | safe }}
 
     {% include 'partials/footer.njk' %}

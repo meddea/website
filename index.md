@@ -5,33 +5,25 @@ heading:
   subtitle: Comming Up with Creative Solutions
   text: We care for your
   accent: lorem ipsum dolores
-card_list:
+services_title: |
+  The service
+  you **will get**
+cards_list:
   - title: Consulting services
     text: The world's leading consultants in building Dynamic Data Economy components.
-    linkText: Read more
     link: #
   - title: Code and Architecture services
     text: Our experts reviews ensure your systems would meet highest security standards, data protection regulation.
-    linkText: Read more
     link: #
   - title: Development
     text: A trusted pair of hands to make sure that you can leverage power of DDE in your products.
-    linkText: Read more
     link: #
   - title: Training
     text: The world's leading consultants in building Dynamic Data Economy components.
-    linkText: Read more
     link: #
+buttons:
+  read_more: Read more
 ---
-
-
-{% max_width max_width %}
-
-{% hero heading.subtitle, heading.text, heading.accent, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Read More", "#" %}
-
-{% services "The service you", "will get", card_list %}
-
-{% end_max_width %}
 
 {% banner 'Do you need individual', 'meeting or consultation?', 'Contact Us', '#' %}
 
