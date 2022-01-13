@@ -6,7 +6,12 @@ const buffer = require("./_data/buffer.json");
 function accordion(title, i, ...content) {
 const contentParts = [];
 
+console.log('content', content);
+
 for(item of content) {
+  if(typeof item === 'undefined') {
+    continue;
+  }
 
   if(typeof item === 'string') {
     contentParts.push(`<p>${item}</p>`)
@@ -150,36 +155,51 @@ ${elements.end_container.call(this)}
     return template;
   }
 
-function proposal(title, text1, text2,) {
+function proposalWrapper() {
   let template = `
   ${elements.max_width.call(this, maxWidth)}
   <div class="proposal">
   <section >
-  ${elements.responsive.call(this)}
-  ${elements.container.call(this, containers, "100_100_100_35_35")}
-  <div class="proposal__heading">
-  <h2 class="h1">${title}</h2>
-  </div>
-  ${elements.end_container.call(this)}
-  ${elements.container.call(this, containers, "100_100_100_65_65")}
-  <div class="proposal__content">
-  <div class="proposal__spacer-top"></div>
-  <p>
-  ${text1}
-  </p>
-  <div class="proposal__content-spacer-inner">
-  </div>
-  <p>
-  ${text2}
-  </p>
-  <div class="proposal__spacer-bottom"></div>
-  </div>
-  ${elements.end_container.call(this)}
+  ${elements.responsive.call(this)}`;
+  return template;
+}
+
+function endProposalWrapper() {
+  let template = `
   ${elements.end_responsive.call(this)}
   </section>
   </div>
-  ${elements.end_max_width.call(this)}`
-  
+  ${elements.end_max_width.call(this)}`;
+  return template;
+}
+
+function proposalHeading(){
+  let template = `
+  ${elements.container.call(this, containers, "100_100_100_35_35")}
+  <div class="proposal__heading">`
+  return template;
+}
+
+function endProposalHeading(){
+  let template = `
+  </div>
+  ${elements.end_container.call(this)}`
+  return template;
+}
+
+function proposalText(){
+  let template = `
+  ${elements.container.call(this, containers, "100_100_100_65_65")}
+  <div class="proposal__content">
+  <div class="proposal__spacer-top"></div>`
+  return template;
+}
+
+function endProposalText(){
+  let template = `
+  <div class="proposal__spacer-bottom"></div>
+  </div>
+  ${elements.end_container.call(this)}`
   return template;
 }
 
@@ -208,7 +228,8 @@ ${elements.end_max_width.call(this)}`
   return template;
 }
 
-function contact_us(title, buttonText, subtitle, address, link) {
+
+function contact_us_wrapper(title) {
   let template = `
   <div class="contact-us">
   <section>
@@ -219,7 +240,23 @@ function contact_us(title, buttonText, subtitle, address, link) {
   ${title}
   </h2>
   <div class="contact-us__spacer-inner-1"></div>
-  ${elements.responsive.call(this)}
+  ${elements.responsive.call(this)}`;
+  return template;
+}
+
+function contact_us__end_wrapper() {
+  let template = `
+  ${elements.end_responsive.call(this)}
+  <div class="contact-us__spacer-bottom"></div>
+  ${elements.end_buffer.call(this)}
+  ${elements.end_max_width.call(this)}
+  </section>
+  </div>`;
+  return template;
+}
+
+function contact_us_form(buttonText) {
+  let template = `
   ${elements.container.call(this, containers, "100_100_100_50_50")}
   <form>
   ${elements.responsive.call(this)}
@@ -251,26 +288,42 @@ function contact_us(title, buttonText, subtitle, address, link) {
   ${elements.end_container.call(this)}
   ${elements.end_responsive.call(this)}
   </form>
-  ${elements.end_container.call(this)}
+  ${elements.end_container.call(this)}`;
+  return template;
+}
+
+function contact_us_text_container() {
+  let template = `
   ${elements.container.call(this, containers, "100_100_100_50_50")}
   <div class="contact-us__address">
-  <address>
-  <h3 class="text-white p">${subtitle}</h3>
-  <div class="contact-us__address-spacer"></div>
-  <a class="p" href="${link}" target="_blank">
-  ${address}
-  </a>
-  </address>
-  </div>
-  ${elements.end_container.call(this)}
-  ${elements.end_responsive.call(this)}
-  <div class="contact-us__spacer-bottom"></div>
-  ${elements.end_buffer.call(this)}
-  ${elements.end_max_width.call(this)}
-  </section>
-  </div>`
+  <address>`;
 
   return template;
+}
+
+function contact_us_link(link, ...text) {
+  const textArray = []
+
+  for(str of text) {{
+    textArray.push(`${str}`)
+  }}
+
+  const textString = textArray.join('<br>')
+
+  let template = `
+  <a class="p" href="${link}" target="_blank">
+    ${textString}
+  </a>`
+
+  return template;
+}
+
+function contact_us_end_text_container() {
+  let template = `
+  </address>
+  </div>
+  ${elements.end_container.call(this)}`;
+  return template
 }
 
 module.exports = function (eleventyConfig) {
@@ -294,12 +347,27 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("color_block", elements.designSystem.color_block);
   eleventyConfig.addShortcode("ui_kit_block", elements.designSystem.ui_kit_block);
 
-
   // project shortcodes
   eleventyConfig.addShortcode("hero", hero);
   eleventyConfig.addShortcode("banner", banner);
-  eleventyConfig.addShortcode("proposal", proposal);
-  eleventyConfig.addShortcode("contact_us", contact_us);
+  eleventyConfig.addShortcode("proposalWrapper", proposalWrapper);
+  eleventyConfig.addShortcode("endProposalWrapper", endProposalWrapper);
+  eleventyConfig.addShortcode("proposalHeading", proposalHeading);
+  eleventyConfig.addShortcode("endProposalHeading", endProposalHeading);
+  eleventyConfig.addShortcode("proposalText", proposalText);
+  eleventyConfig.addShortcode("endProposalText", endProposalText);
+
+
+  eleventyConfig.addShortcode("contact_us_wrapper", contact_us_wrapper);
+  eleventyConfig.addShortcode("contact_us__end_wrapper", contact_us__end_wrapper);
+  eleventyConfig.addShortcode("contact_us_form", contact_us_form);
+  eleventyConfig.addShortcode("contact_us_text_container", contact_us_text_container);
+  eleventyConfig.addShortcode("contact_us_end_text_container", contact_us_end_text_container);
+  eleventyConfig.addShortcode("contact_us_link", contact_us_link);
+
+
   eleventyConfig.addShortcode("services", services);
   eleventyConfig.addShortcode("accordion", accordion);
+
+
 }

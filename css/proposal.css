@@ -44,3 +44,11 @@
         padding: 0 155px 0 75px;
     }
 }
+
+.proposal__content p {
+    padding-bottom: 32px;
+}
+
+.proposal__content p:nth-last-of-type(1) {
+    padding-bottom: 8px;
+}
