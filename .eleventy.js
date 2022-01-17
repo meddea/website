@@ -262,7 +262,16 @@ function contact_us_end_text_container() {
 
 module.exports = function (eleventyConfig) {
   const markdownIt = require("markdown-it");
-  const md = new markdownIt({ html: true, breaks: true });
+  const markdownItOptions = {
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true,
+  };
+
+  const md = markdownIt(markdownItOptions)
+  eleventyConfig.setLibrary('md', md);
+  eleventyConfig.addFilter('markdownify', (markdownString) => md.render(markdownString));
 
   eleventyConfig.addPairedShortcode("markdown", (content) => md.renderInline(content));
 
@@ -307,4 +316,10 @@ module.exports = function (eleventyConfig) {
 
 
   eleventyConfig.addShortcode("accordion", accordion);
+
+  return {
+    markdownTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+  };
 }

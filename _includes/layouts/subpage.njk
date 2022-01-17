@@ -44,17 +44,42 @@
   <div class="accordion-spacer-top"></div>
   <div id="accordion" class="accordion">
   {% for accordion in accordion__list %}
-    {% accordion accordion.title, loop.index, accordion.text, accordion.list %}
+    <div class="accordion__control-parrent responsive">
+      <h2 class="accordion__title">
+        {{ accordion.title }}
+      </h2>
+      <button class="accordion__control" type="button" disabled="disabled" aria-disabled="true" aria-expanded="true" aria-controls="accordion-panel-{{ loop.index }}" id="accordion-control-{{ loop.index }}">
+      Read more
+      </button>
+    </div>
+    <div class="accordion__panel" id="accordion-panel-{{ loop.index }}" role="region" aria-labelledby="accordion-control-{{ loop.index }}">
+    <div class="accordion-item__spacer-inner-1"></div>
+      <p>{% markdown %} {{ accordion.content }} {% endmarkdown %}</p>
+      <ul>
+      {% for item in accordion.list %}
+        <li>{{ item }}</li>
+      {% endfor %}
+      </ul>
+    <div class="accordion-item__spacer-inner-2"></div>
+    </div>
   {% endfor %}
   </div>
   <div class="accordion-spacer-bottom"></div>
   </div>
+  {% markdown %} {{ some }}{% endmarkdown %}
   {% end_container %}
   {% end_responsive %}
+
+  <div class="banner">
+  <section>
+    <div class="banner__spacer-top"></div>
+    <div class="banner__max-width">
+      {{ content | safe }}
+    </div>
+    <div class="banner__spacer-bottom"></div>
+  </section>
+  </div>
   {% end_max_width %}
-
-  {{ content | safe }}
-
   <!-- Header -->
   <script src="/js/utils.js"></script>
   <script src="/js/header.js"></script>

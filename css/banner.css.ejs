@@ -3,29 +3,87 @@ permalink: css/banner.css
 ---
 
 .banner {
-    background-image: url("../img/photo02.png");
+  padding: 8px;
+  background-image: url("../img/photo02.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .banner__max-width {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 300px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 @media (min-width: <%= responsive.MEDIA.tablet %>px) {
-    .banner__max-width {
-        max-width: 400px;
-    }
+  .banner__max-width {
+    max-width: 400px;
+  }
 }
 
 @media (min-width: <%= responsive.MEDIA.laptop%>px) {
-    .banner__max-width {
-        max-width: 550px;
-    }
+  .banner__max-width {
+    max-width: 550px;
+  }
 }
 
-.banner__max-width .button {
-    margin: 0 auto;
+.banner h2 {
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: <%= colors["On Surface"]["Primary 900"].color %>;
+  padding-bottom: 32px;
+}
+
+@media (min-width: 600px) {
+  .banner h2 {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner h2 {
+    letter-spacing: 0;
+    font-size: 40px;
+  }
+}
+
+.banner strong {
+  font-weight: 600;
+}
+
+.banner__max-width a {
+  display: inline-block;
+  min-width: 100px;
+  min-height: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: <%= colors["On Surface"]["Primary 900"].color %>;
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  background-image: url(../img/buttons/button-white.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.svg .banner__max-width a {
+  background-image: url(../img/buttons/button-white.svg);
+}
+
+.banner__max-width a:hover {
+  text-decoration: underline;
+}
+
+.banner__max-width a:active {
+  color: <%= colors['Gray']['300'].color %>;
 }
