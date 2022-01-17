@@ -1,3 +1,7 @@
+---
+permalink: css/field.css
+---
+
 .field {
     background-color: transparent;
     box-sizing: border-box;
@@ -18,14 +22,14 @@ textarea.field {
     resize: vertical;
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
     textarea.field {
         min-height: 210px;
     } 
 }
 
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop %>px) {
     textarea.field {
         min-height: 300px;
     } 

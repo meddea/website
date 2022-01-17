@@ -1,3 +1,7 @@
+---
+permalink: css/contact-us.css
+---
+
 .contact-us {
   background-image: url("../img/photo03_form-contact.png");
   background-size: cover;
@@ -9,13 +13,13 @@
   padding: 0 36px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
   .contact-us__max-width {
     padding: 0 50px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
   .contact-us__max-width {
     max-width: 780px;
     margin: 0 auto;
@@ -23,7 +27,7 @@
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
 .contact-us__address {
   height: 100%;
   display: flex;
@@ -57,13 +61,13 @@
   padding-bottom: 24px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: <%= responsive.MEDIA.phone %>px) {
   .contact-us__address address h3 {
     font-size: 22px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
   .contact-us__address address h3 {
     font-size: 26px;
   }

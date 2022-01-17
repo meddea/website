@@ -269,6 +269,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js/**/*.js");
   eleventyConfig.addPassthroughCopy("css/**/*.css");
   eleventyConfig.addPassthroughCopy("img");
+  eleventyConfig.addPassthroughCopy("fonts");
 
   eleventyConfig.addShortcode("max_width", elements.max_width);
   eleventyConfig.addShortcode("end_max_width", elements.end_max_width);

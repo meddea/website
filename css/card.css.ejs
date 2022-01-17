@@ -1,8 +1,12 @@
+---
+permalink: css/card.css
+---
+
 .services {
     counter-reset: card; 
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
     .card {
         padding-right: 60px;
     }

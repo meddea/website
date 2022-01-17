@@ -1,23 +1,7 @@
 {
   "Primary" : {
-    "100": {
-      "color" : "#EEF6FF",
-      "label" : "#000000"
-    },
-    "200": {
-      "color" : "#D8EBFF",
-      "label" : "#000000"
-    },
-    "300": {
-      "color" : "#BBDDFF",
-      "label" : "#000000"
-    },
     "500": {
-      "color" : "#2962FF",
-      "label" : "#FFFFFF"
-    },
-    "700": {
-      "color" : "#0E4D8D",
+      "color" : "#3d95f7",
       "label" : "#FFFFFF"
     }
   },
@@ -26,16 +10,22 @@
     "label" : "#000000"
   },
   "Surface" : {
-    "color" : "#FFFFFF",
-    "label" : "#000000"
+    "White" : {
+      "color" : "#FFFFFF",
+      "label" : "#000000"
+    },
+    "Gray" : {
+      "color" : "#F2F2F2",
+      "label" : "#000000"
+    },
+    "Primary 900" : {
+      "color" : "#033E8C",
+      "label" : "#FFFFFF"
+    }
   },
   "Border" : {
     "color" : "#F0F0F0",
     "label" : "#000000"
-  },
-  "Error" : {
-    "color" : "#A4262C",
-    "label" : "#FFFFFF"
   },
   "On Primary" : {
     "color" : "#FFFFFF",
@@ -46,22 +36,22 @@
     "label" : "#FFFFFF"
   },
   "On Surface" : {
-    "On Surface" : {
+    "White" : {
       "color" : "#000000",
       "label" : "#FFFFFF"
     },
-    "On Surface Third" : {
+    "White Secondary" : {
       "color" : "#131313",
       "label" : "#FFFFFF"
     },
-    "On Surface Secondary" : {
+    "Primary 900" : {
+      "color" : "#FFFFFF",
+      "label" : "#000000"
+    },
+    "Typography" : {
       "color" : "#939A9C",
       "label" : "#FFFFFF"
     }
-  },
-  "On Error" : {
-    "color" : "#FFFFFF",
-    "label" : "#000000"
   },
   "Gray" : {
     "100" : {
@@ -72,9 +62,13 @@
         "color" : "#C4C4C4",
         "label" : "#000000" 
     },
-    "400" : {
+    "300" : {
       "color" : "#C0C0C0",
       "label" : "#000000" 
+    },
+    "400" : {
+      "color" : "#666666",
+      "label" : "#FFFFFF" 
     },
     "800" : {
         "color" : "#4C4C52",
@@ -84,5 +78,8 @@
       "color" : "#2C2C2F",
       "label" : "#FFFFFF" 
     }
+  },
+  "Black" : {
+    "color" : "#000000"
   }
 }

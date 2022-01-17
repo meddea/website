@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include 'partials/favicon.njk' %}
+
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/picture.css">
+    <link rel="stylesheet" href="/css/spacers.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/contact-us.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/proposal.css">
+    <link rel="stylesheet" href="/css/field.css">
+    <link rel="stylesheet" href="/css/button-1.css">
+    <link rel="stylesheet" href="/css/button-2.css">
+    <link rel="stylesheet" href="/css/social-link.css">
+
+    <!-- Menu -->
+    <link rel="stylesheet" href="/css/header.css">
+
+    {% include 'partials/js-detect.njk' %}
+  </head>
+  <body>
+    {% include 'partials/header.njk' %}
+
+    {{ content | safe }}
+    <!-- Header -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>

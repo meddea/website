@@ -1,19 +1,22 @@
+---
+permalink: css/footer.css
+---
 
 .footer {
-  background-color: #033E8C;
+  background-color: <%= colors.Surface["Primary 900"].color %>;
 }
 
 .footer__max-width {
   padding: 0 36px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
   .footer__max-width {
     padding: 0 50px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
   .footer__max-width {
     max-width: 430px;
     margin: 0 auto;
@@ -25,19 +28,19 @@
   color: #FFFFFF;
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
   p.footer__copyright {
     font-size: 22px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
   p.footer__copyright {
     font-size: 22px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
   .footer__copyright {
     text-align: right;
   }

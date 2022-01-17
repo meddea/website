@@ -17,14 +17,14 @@ permalink: css/header.css
   padding-bottom: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
   .header {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
   .header {
     padding-top: 90px;
     padding-bottom: 24px;
@@ -40,10 +40,17 @@ permalink: css/header.css
 }
 
 .main-menu__item {
-  padding: 23px 0;
+  padding: 20px;
 }
 
-@media(min-width: 1440px) {
+
+@media(min-width: 0px) {
+  .main-menu__item {
+    padding: 23px 0;
+  }
+}
+
+@media(min-width: <%= responsive.MEDIA.desktop%>px) {
   .main-menu__item {
     padding: 0 38px;
   }
@@ -58,7 +65,7 @@ permalink: css/header.css
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media(min-width: <%= responsive.MEDIA.tablet %>px) {
   .logo a img {
     max-width: 300px;
   }
@@ -71,4 +78,14 @@ permalink: css/header.css
 .header__main-menu-burger {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.header__logo {
+  margin-top: 20px;
+}
+
+@media(min-width: 0px) {
+  .header__logo {
+    margin-top: 0;
+  }
 }

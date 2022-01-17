@@ -1,3 +1,7 @@
+---
+permalink: css/proposal.css
+---
+
 .proposal__heading {
     display: flex;
     flex-direction: column;
@@ -13,14 +17,14 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
     .proposal__heading {
         padding: 70px 50px 80px 50px;
     }
 }
 
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
     .proposal__heading h2 {
         max-width: 380px;
         margin:  0 auto;
@@ -29,17 +33,17 @@
 
 .proposal__content {
     padding: 0 36px;
-    background-color: #F2F2F2;
+    background-color: <%= colors.Surface.Gray.color %>;
 }
 
-@media (min-width: 768px) {
+@media (min-width: <%= responsive.MEDIA.tablet %>px) {
     .proposal__content {
         padding: 0 50px;
     }
 }
 
 
-@media (min-width: 1240px) {
+@media (min-width: <%= responsive.MEDIA.laptop%>px) {
     .proposal__content {
         padding: 0 155px 0 75px;
     }

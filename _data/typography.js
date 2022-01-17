@@ -1,9 +1,9 @@
 const colors = require('./colors.json');
 
 const ON_BACKGROUND_COLOR = colors['On Background'].color;
-const ON_SURFACE_COLOR = colors['On Surface']['On Surface'].color;
-const ON_SURFACE_COLOR_2 = colors['On Surface']['On Surface Third'].color;
-const ON_SURFACE_SECONDARY_COLOR = colors['On Surface']['On Surface Secondary'].color;
+const ON_SURFACE_COLOR = colors['On Surface']['White'].color;
+const ON_SURFACE_COLOR_2 = colors['On Surface']['White Secondary'].color;
+const ON_SURFACE_SECONDARY_COLOR = colors['On Surface']['Typography'].color;
 const FONT_FAMILY = 'Montserrat, Arial, sans-serif';
 
 module.exports = {
@@ -174,4 +174,9 @@ module.exports = {
       'color': ON_SURFACE_SECONDARY_COLOR
     }
   },
+  "b": {
+    'default': {
+      'font-weight': 800,
+    }
+  }
 }
