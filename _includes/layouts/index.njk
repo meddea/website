@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="{{ description }}">
     {% include 'partials/favicon.njk' %}
 
     <link rel="stylesheet" href="/css/responsive/max-width.css">
@@ -106,7 +106,7 @@
                 <div class="card__spacer-inner-2"></div>
                 <div class="mt-auto">
                   {% buffer %}
-                  <a class="button-1" href="#">{{buttons.read_more}}</a>
+                  <a class="button-1" href="{{ card.link }}">{{buttons.read_more}}</a>
                   {% end_buffer %}
                 </div>
               </div>
@@ -125,8 +125,9 @@
         <section>
           <div class="banner__spacer-top"></div>
           <div class="banner__max-width">
-            <h2 class="h3 text-center text-white">Do you need individual <strong>meeting or consultation?</strong></h2>
-            <a class="button-2" href="#">{{ buttons.contact_us }}</a>
+            <h2 class="h3 text-center text-white">{% markdown %}{{ banner.heading }}{% endmarkdown %}</h2>
+            <div class="spacer-16"></div>
+            <a class="button-2" href="{{ banner.link }}">{{ buttons.contact_us }}</a>
           </div>
           <div class="banner__spacer-bottom"></div>
         </section>
@@ -169,20 +170,21 @@
               {% responsive %}
                 {% container containers, "100_50_50_50_50" %}
                   {% buffer buffer %}
-                    <label class="visually-hidden">Enter your name</label>
+                    <label for="user-name" class="visually-hidden">Enter your name</label>
                     <input type="text" placeholder="Name" class="field" name="user-name" id="user-name">
                   {% end_buffer %}
                 {% end_container %}
                 {% container containers, "100_50_50_50_50" %}
                   {% buffer buffer %}
-                    <label class="visually-hidden">Enter your mail</label>
+                    <label for="user-email" class="visually-hidden">Enter your mail</label>
                     <input type="email" placeholder="Email" class="field" name="user-email" id="user-email">
                   {% end_buffer %}
                 {% end_container %}
 
                 {% container containers, "100_100_100_100_100" %}
                   {% buffer buffer %}
-                    <textarea class="field"></textarea>
+                    <label for="user-text" class="visually-hidden">Enter your mail</label>
+                    <textarea name="user-text" id="user-text" class="field"></textarea>
                   {% end_buffer %}
                 {% end_container %}
                 {% container containers, "100_100_100_100_100" %}
