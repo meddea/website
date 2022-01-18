@@ -37,58 +37,179 @@
     {% include 'partials/header.njk' %}
     {% max_width max_width %}
 
-    {% hero heading.subtitle, heading.text, heading.accent, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "Read More", "#" %}
-
-    <div class="services">
-      <section>
-        <div class="services__bg"></div>
-        <div class="services__spacer-top"></div>
-        {% responsive %}
-        {% container containers, "100_100_50_40_40" %}
-        {% end_container %}
-        {% container containers, "100_100_50_60_60" %}
-        <div class="side-border-title side-border-title--sub">
-          <h2 class="h1">
-            {% markdown %}{{ services_title }} {% endmarkdown %}
-          </h2>
-        </div>
-        {% end_container %}
-        {% end_responsive %}
-        <div class="services__spacer-inner-1"></div>
-        {% responsive %}
-        {% container containers, "100_100_100_40_40" %}
-        {% end_container %}
-        {% container containers, "100_100_100_60_60" %}
-        <div class="services__content">
-          {% responsive %}
-          {% for card in cards_list %}
-          {% container containers, "100_100_50_50_50" %}
-          <div class="card">
-            <div class="card__spacer-top"></div>
-            <div class="card__inner">
-              <h3 class="h2">
-                {{ card.title }}
-              </h3>
-              <div class="card__spacer-inner-1"></div>
-              <p>{{ card.text }}</p>
-              <div class="card__spacer-inner-2"></div>
-              <div class="mt-auto">
-                {% buffer %}
-                <a class="button-1" href="#">{{buttons.read_more}}</a>
+      <div class="hero">
+        <div class="hero__spacer-top"></div>
+        <section>
+          <div class="hero__inner">
+            {% responsive %}
+            {% container containers, "100_100_100_40_40" %}
+            <div class="hero__content">
+              <p>
+                {% markdown %}{{ hero.subtitle }}{% endmarkdown %}
+              </p>
+              <div class="side-border-title">
+                <h1>
+                  {% markdown %}{{ hero.title }}{% endmarkdown %}
+                </h1>
+              </div>
+              <div class="spacer-24"></div>
+              <div class="p-l-24">
+                <p>
+                  {% markdown %}{{ hero.text }}{% endmarkdown %}
+                </p>
+                <div class="spacer-24"></div>
+                {% buffer buffer %}
+                  <a class="button-1" href="{{ hero.link }}">{{ buttons.read_more }}</a>
                 {% end_buffer %}
               </div>
             </div>
-            <div class="card__spacer-bottom"></div>
+          {% end_container %}
+          {% container containers, "100_100_100_60_60" %}
+          {% end_container %}
+          {% end_responsive %}
+          </div>
+        </section>
+      </div>
+
+      <div class="services">
+        <section>
+          <div class="services__bg"></div>
+          <div class="services__spacer-top"></div>
+          {% responsive %}
+          {% container containers, "100_100_50_40_40" %}
+          {% end_container %}
+          {% container containers, "100_100_50_60_60" %}
+          <div class="side-border-title side-border-title--sub">
+            <h2 class="h1">
+              {% markdown %}{{ services_title }} {% endmarkdown %}
+            </h2>
           </div>
           {% end_container %}
-          {% endfor %}
           {% end_responsive %}
-        </div>
-        {% end_container %}
-        <div class="card__spacer-bottom"></div>
-      </section>
-    </div>
+          <div class="services__spacer-inner-1"></div>
+          {% responsive %}
+          {% container containers, "100_100_100_40_40" %}
+          {% end_container %}
+          {% container containers, "100_100_100_60_60" %}
+          <div class="services__content">
+            {% responsive %}
+            {% for card in cards_list %}
+            {% container containers, "100_100_50_50_50" %}
+            <div class="card">
+              <div class="card__spacer-top"></div>
+              <div class="card__inner">
+                <h3 class="h2">
+                  {% markdown %}{{ card.title }}{% endmarkdown %}
+                </h3>
+                <div class="card__spacer-inner-1"></div>
+                <p>{% markdown %}{{ card.text }}{% endmarkdown %}</p>
+                <div class="card__spacer-inner-2"></div>
+                <div class="mt-auto">
+                  {% buffer %}
+                  <a class="button-1" href="#">{{buttons.read_more}}</a>
+                  {% end_buffer %}
+                </div>
+              </div>
+              <div class="card__spacer-bottom"></div>
+            </div>
+            {% end_container %}
+            {% endfor %}
+            {% end_responsive %}
+          </div>
+          {% end_container %}
+          <div class="card__spacer-bottom"></div>
+        </section>
+      </div>
 
+      <div class="banner">
+        <section>
+          <div class="banner__spacer-top"></div>
+          <div class="banner__max-width">
+            <h2 class="h3 text-center text-white">Do you need individual <strong>meeting or consultation?</strong></h2>
+            <a class="button-2" href="#">{{ buttons.contact_us }}</a>
+          </div>
+          <div class="banner__spacer-bottom"></div>
+        </section>
+      </div>
+
+      <div class="proposal">
+        <section>
+          {% responsive %}
+            {% container containers, "100_100_100_35_35" %}
+              <div class="proposal__heading">
+                <h2>
+                  {% markdown %}{{ proposal.heading }}{% endmarkdown %}
+                </h2>
+              </div>
+            {% end_container %}
+            {% container containers, "100_100_100_65_65" %}
+              <div class="proposal__content">
+                <div class="proposal__spacer-top"></div>
+                <p>
+                  {% markdown %}{{ proposal.text }}{% endmarkdown %}
+                </p>
+                <div class="proposal__spacer-bottom"></div>
+              </div>
+            {% end_container %}
+          {% end_responsive %}
+        </section>
+      </div>
+
+      <div class="contact-us">
+        <section>
+          {% buffer buffer, "max_width" %}
+          <div class="contact-us__spacer-top"></div>
+          <h2 class="text-white">
+            {% markdown %}{{ contact.heading }}{% endmarkdown %}
+          </h2>
+          <div class="contact-us__spacer-inner-1"></div>
+          {% responsive %}
+            {% container containers, "100_100_100_50_50" %}
+            <form>
+              {% responsive %}
+                {% container containers, "100_50_50_50_50" %}
+                  {% buffer buffer %}
+                    <label class="visually-hidden">Enter your name</label>
+                    <input type="text" placeholder="Name" class="field" name="user-name" id="user-name">
+                  {% end_buffer %}
+                {% end_container %}
+                {% container containers, "100_50_50_50_50" %}
+                  {% buffer buffer %}
+                    <label class="visually-hidden">Enter your mail</label>
+                    <input type="email" placeholder="Email" class="field" name="user-email" id="user-email">
+                  {% end_buffer %}
+                {% end_container %}
+
+                {% container containers, "100_100_100_100_100" %}
+                  {% buffer buffer %}
+                    <textarea class="field"></textarea>
+                  {% end_buffer %}
+                {% end_container %}
+                {% container containers, "100_100_100_100_100" %}
+                  {% responsive %}
+                    <div class="float-right ml-auto">
+                      {% buffer buffer %}
+                        <button type="submit" class="button-2">{{ buttons.contact_us }}</button>
+                      {% end_buffer %}
+                    </div>
+                  {% end_responsive %}
+                {% end_container %}
+              {% end_responsive %}
+            </form>
+          {% end_container %}
+          {% container containers, "100_100_100_50_50" %}
+            <div class="contact-us__address">
+            <address>
+              <h3>{% markdown %}{{ contact.subtitle }}{% endmarkdown %}</h3>
+              <a class="p" href="{{ contact.link }}">{% markdown %}{{ contact.text }}{% endmarkdown %}</a>
+            </address>
+            </div>
+          {% end_container %}
+          {% end_responsive %}
+          <div class="contact-us__spacer-bottom"></div>
+          {% end_buffer %}
+        </section>
+      </div>
     {% end_max_width %}
 
     {{ content | safe }}
