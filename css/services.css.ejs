@@ -8,13 +8,14 @@ permalink: css/services.css
 
 .services__bg {
   position: absolute;
+  z-index: 3;
   opacity: 0.3;
-  top: -110px;
+  top: -163px;
   left: 18px;
-  width: 65%;
-  padding-bottom: 101%;
-  background-image: url("../img/photo01.png");
-  background-size: cover;
+  width: 69.33%;
+  padding-bottom: 134%;
+  background-image: url(../img/photo01.png);
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -25,17 +26,18 @@ permalink: css/services.css
 
 @media (min-width: <%= responsive.MEDIA.tablet %>px) {
   .services__bg {
-    opacity: 0.6;
+    opacity: 1;
     width: 31.5%;
     padding-bottom: 64.66%;
     top: 35px;
     left: 0;
+    background-size: 100% auto;
+    background-position: top 0 left 0;
   }
 }
 
 @media (min-width: <%= responsive.MEDIA.laptop%>px) {
   .services__bg {
-    opacity: 0.7;
     width: 32%;
     padding-bottom: 53%;
     top: 230px;
@@ -45,6 +47,7 @@ permalink: css/services.css
 
 .services__content {
   position: relative;
+  z-index: 4;
   padding: 36px;
 }
   

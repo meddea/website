@@ -88,3 +88,13 @@ permalink: css/hero.css
 .hero__content h1 {
   max-width: 500px;
 }
+
+.hero__content .buffer-default {
+  text-align: right;
+}
+
+@media(min-width: <%= responsive.MEDIA.tablet %>px) {
+  .hero__content .buffer-default {
+    text-align: left;
+  }
+}
