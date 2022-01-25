@@ -21,25 +21,25 @@ cards_list:
     text: | 
       The world's leading consultants in building Dynamic Data Economy components.
     link: | 
-      /services
+      /сonsulting-services
   - title: |  
       Code and Architecture services
     text: | 
       Our experts reviews ensure your systems would meet highest security standards, data protection regulation.
     link: | 
-      /services
+      /сode-and-architecture-services
   - title: | 
       Development
     text: | 
       A trusted pair of hands to make sure that you can leverage power of DDE in your products.
     link: | 
-      /services
+      /development
   - title: |
       Training
     text: | 
       The world's leading consultants in building Dynamic Data Economy components.
     link: | 
-      /services
+      /training
 proposal: 
   heading: |
     Who **we are** and what **we can do** for you?

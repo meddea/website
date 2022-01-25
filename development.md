@@ -3,6 +3,7 @@ layout: layouts/subpage.njk
 templateEngineOverride: njk, md
 title: meddea - what we offer
 description: meddea description
+accordion__opened__panel: 3
 accordion__list:
   - title: Consulting services
     content: |

@@ -3,6 +3,7 @@ permalink: js/accordion.js
 ---
 
 (function() {
+    var accordion = document.getElementById('accordion');
     var controlsParrents = document.getElementsByClassName('accordion__control-parrent');
     var controls = document.getElementsByClassName('accordion__control');
     var panels = document.getElementsByClassName('accordion__panel');
@@ -45,11 +46,14 @@ permalink: js/accordion.js
   
       }
     }
+
+    var openedPanelCount = accordion.className.slice(-1);
+    console.log('openedPanelCount', openedPanelCount);
   
     for(var i = 0; i < controls.length; i++) {
       controls[i].removeAttribute('disabled');
   
-      if(i === 0) {
+      if(i === openedPanelCount - 1) {
         window.classFunction.addClass(controlsParrents[i], 'accordion__control-parrent--active');
         window.classFunction.addClass(controls[i], 'accordion__control--active');
         window.classFunction.addClass(panels[i], 'accordion__panel--active');
