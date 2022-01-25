@@ -21,25 +21,25 @@ cards_list:
     text: | 
       The world's leading consultants in building Dynamic Data Economy components.
     link: | 
-      #
+      /services
   - title: |  
       Code and Architecture services
     text: | 
       Our experts reviews ensure your systems would meet highest security standards, data protection regulation.
     link: | 
-      #
+      /services
   - title: | 
       Development
     text: | 
       A trusted pair of hands to make sure that you can leverage power of DDE in your products.
     link: | 
-      #
+      /services
   - title: |
       Training
     text: | 
       The world's leading consultants in building Dynamic Data Economy components.
     link: | 
-      #
+      /services
 proposal: 
   heading: |
     Who **we are** and what **we can do** for you?
@@ -62,7 +62,6 @@ contact:
     Swizerland
   link: |
     https://www.google.com/maps/place/Spaces+-+Basel,+Grosspeter+Tower/@47.5442757,7.6030794,16.25z/data=!4m5!3m4!1s0x4791b836437873c5:0x3741b3ea9de33c59!8m2!3d47.5450004!4d7.6026437
-
 buttons:
   read_more: Read more
   contact_us: Contact us

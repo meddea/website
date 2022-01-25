@@ -49,7 +49,7 @@
         {{ accordion.title }}
       </h2>
       <button class="accordion__control" type="button" disabled="disabled" aria-disabled="true" aria-expanded="true" aria-controls="accordion-panel-{{ loop.index }}" id="accordion-control-{{ loop.index }}">
-      Read more
+      {{ buttons.read_more }}
       </button>
     </div>
     <div class="accordion__panel" id="accordion-panel-{{ loop.index }}" role="region" aria-labelledby="accordion-control-{{ loop.index }}">
@@ -70,14 +70,17 @@
   {% end_responsive %}
 
   <div class="banner">
-  <section>
-    <div class="banner__spacer-top"></div>
-    <div class="banner__max-width">
-      {{ content | safe }}
-    </div>
-    <div class="banner__spacer-bottom"></div>
-  </section>
+    <section>
+      <div class="banner__spacer-top"></div>
+      <div class="banner__max-width">
+        <h2 class="h3 text-center text-white">{% markdown %}{{ banner.heading }}{% endmarkdown %}</h2>
+        <div class="spacer-16"></div>
+        <a class="button-2" href="{{ banner.link }}">{{ buttons.contact_us }}</a>
+      </div>
+      <div class="banner__spacer-bottom"></div>
+    </section>
   </div>
+
   {% end_max_width %}
   <!-- Header -->
   <script src="/js/utils.js"></script>

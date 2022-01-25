@@ -80,6 +80,7 @@
           {% end_container %}
           {% container containers, "100_100_50_60_60" %}
           <div class="side-border-title side-border-title--sub">
+          <span id="what-we-offer"></span>
             <h2 class="h1">
               {% markdown %}{{ services_title }} {% endmarkdown %}
             </h2>
@@ -138,6 +139,7 @@
           {% responsive %}
             {% container containers, "100_100_100_35_35" %}
               <div class="proposal__heading">
+              <span id="about-us"></span>
                 <h2>
                   {% markdown %}{{ proposal.heading }}{% endmarkdown %}
                 </h2>
@@ -160,6 +162,7 @@
         <section>
           {% buffer buffer, "max_width" %}
           <div class="contact-us__spacer-top"></div>
+          <span id="contact-us"></span>
           <h2 class="text-white">
             {% markdown %}{{ contact.heading }}{% endmarkdown %}
           </h2>
