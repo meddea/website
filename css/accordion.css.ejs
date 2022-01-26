@@ -2,8 +2,138 @@
 permalink: css/accordion.css
 ---
 
-<%- include("../node_modules/elements/_includes/css/accordion-functional.css.ejs"); %>
-<%- include("../node_modules/elements/_includes/css/accordion-prettier.css.ejs"); %>
+.accordion {
+overflow: hidden;
+}
+
+.accordion__head-panel {
+padding: 0;
+}
+
+.accordion--separate-headpnel .accordion__head-panel {
+zoom: 1;
+padding: <%= buffer.default.padding %>px;
+}
+
+.accordion--separate-headpnel .accordion__head-panel:before,
+.accordion--separate-headpnel .accordion__head-panel:after { 
+content: "";
+display: table; 
+}
+
+.accordion--separate-headpnel .accordion__head-panel:after {
+clear: both; 
+}
+
+@supports (display: flex) {
+.accordion--separate-headpnel .accordion__head-panel::before,
+.accordion--separate-headpnel .accordion__head-panel::after {
+    content: none;
+}
+.accordion--separate-headpnel .accordion__head-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+}
+
+.accordion--separate-headpnel .accordion__head-panel h3 {
+float: left;
+}
+
+.js .accordion__control {
+cursor: pointer;
+}
+
+.js .accordion__panel {
+display: none;
+}
+
+.js .accordion__panel--active {
+display: block;
+}
+
+.js .accordion--separate-headpnel .accordion__head-panel:nth-last-of-type(2) {
+border-bottom: 0;
+}
+
+.js .accordion__head-panel.accordion__head-panel--active,
+.js .accordion--separate-headpnel .accordion__head-panel--active:nth-last-of-type(2) {
+border-bottom: 3px solid <%= colors.Border.color %>;
+}
+
+.accordion {
+    border-radius: 8px;
+    border: 3px solid <%= colors.Border.color %>;
+  }
+  
+  .accordion > *:nth-child(1){
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .accordion > * {
+    border-bottom: 3px solid <%= colors.Border.color %>;
+  }
+  
+  .accordion > *:nth-last-child(1) {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .accordion__head-panel,
+  .accordion__panel {
+    background-color: <%= colors.Surface.color %>;
+  }
+  
+  .accordion > *:nth-last-child(1) {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .accordion__control {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: <%= buffer.default.padding *2 %>px;
+    background-color: <%= colors.Surface.color %>;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .accordion--separate-headpnel .accordion__control-container {
+    width: 40px; /* should be equal to accordion__control width */
+    margin-left: auto;
+    padding: <%= buffer.default.padding %>px;
+  }
+    
+  .accordion--separate-headpnel .accordion__control {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background-color: <%= colors.Gray["100"].color %>;
+    background-image: url("../../img/buttons/arrow-down.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10px 5px;
+    border-radius: 50%;
+  }
+    
+  .svg .accordion--separate-headpnel .accordion__control {
+    background-image: url("../../img/buttons/arrow-down.svg");
+  }
+    
+  .accordion--separate-headpnel .accordion__control--active {
+    background-image: url("../../img/buttons/arrow-up.png");
+  }
+    
+  .svg .accordion--separate-headpnel .accordion__control--active {
+    background-image: url("../../img/buttons/arrow-up.svg");
+  }
+    
 
 .accordion {
     border-radius: 0;

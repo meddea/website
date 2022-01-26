@@ -5,7 +5,8 @@
   "main": ".eleventy.js",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0-beta.8",
-    "elements": "gitlab:softevol/elements#fix-branch",
+    "@11ty/eleventy-img": "^1.0.0",
+    "elements": "gitlab:softevol/elements",
     "markdown-it": "^12.3.2"
   },
   "scripts": {

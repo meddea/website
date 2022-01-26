@@ -5,10 +5,7 @@
       <div class="header__logo logo" role="banner">
         <a href="/">
         {% set alt = site.name + " logo" %}
-        <picture>
-          <source type="image/webp" srcset="/img/logo.webp">
-          <img src="/img/logo.png" alt="{{alt}}" width="300" height="124">
-        </picture>
+        {% picturePngWebp "img/logo.png", alt, "300", 124 %}
         </a>
       </div>
       <div class="header__main-menu-burger burger"></div>
