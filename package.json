@@ -1,12 +1,11 @@
 {
-  "name": "starter",
+  "name": "meddea",
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0-beta.8",
     "@11ty/eleventy-img": "^1.0.0",
-    "elements": "gitlab:softevol/elements",
     "markdown-it": "^12.3.2"
   },
   "scripts": {
@@ -18,7 +17,7 @@
   "author": "softevol",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/softevol/starter/issues"
+    "url": "https://github.com/Opensoftware/meddea_website/issues"
   },
-  "homepage": "https://gitlab.com/softevol/starter#readme"
+  "homepage": "https://github.com/Opensoftware/meddea_website/"
 }
