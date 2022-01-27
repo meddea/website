@@ -1,34 +1,38 @@
+---
+permalink: css/design-system/assets.css
+---
+
 .assets-block__inner {
-    min-height: 102px;
-    padding: 8px;
-    border: 1px solid <%= colors.Border.color %>;
-    background-color: <%= colors.Surface.color %>;
-  }
-  
-  .assets-block__buffer,
+  min-height: 102px;
+  padding: 8px;
+  border: 1px solid <%= colors.Border.color %>;
+  background-color: <%= colors.Surface.White.color %>;
+}
+
+.assets-block__buffer,
+.assets-block {
+  padding: 8px;
+}
+
+.assets-block__inner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@supports (display: flex) {
   .assets-block {
-    padding: 8px;
+    height: 100%;
+    box-sizing: border-box;
   }
-  
-  .assets-block__inner img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+  .assets-block__inner {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
   }
-  
-  @supports (display: flex) {
-    .assets-block {
-      height: 100%;
-      box-sizing: border-box;
-    }
-  
-    .assets-block__inner {
-      display: flex;
-      height: 100%;
-      box-sizing: border-box;
-    }
-  
-    .assets-block__buffer {
-      margin: auto;
-    }
+
+  .assets-block__buffer {
+    margin: auto;
   }
+}

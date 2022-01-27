@@ -36,4 +36,16 @@ title: UI-Kit
 {% ui_kit_block containers, "burger-button burger-button--opened", "button" %}
 {% end_responsive %}
 
+### button-1
+
+{% responsive %}
+{% ui_kit_block containers, "button-1", "link" %}
+{% end_responsive %}
+
+### button-2
+
+{% responsive %}
+{% ui_kit_block containers, "button-2", "link", "#000000" %}
+{% end_responsive %}
+
 {% end_max_width %}

@@ -1,34 +1,38 @@
+---
+permalink: css/design-system/ui-kit.css
+---
+
 .ui-kit-block__inner {
-    min-height: 102px;
-    padding: 8px;
-    border: 1px solid <%= colors.Border.color %>;
-    background-color: <%= colors.Surface.color %>;
-  }
-  
-  .ui-kit-block__buffer,
+  min-height: 102px;
+  padding: 8px;
+  border: 1px solid <%= colors.Border.color %>;
+  background-color: <%= colors.Surface.color %>;
+}
+
+.ui-kit-block__buffer,
+.ui-kit-block {
+  padding: 8px;
+}
+
+.ui-kit-block__inner img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@supports (display: flex) {
   .ui-kit-block {
-    padding: 8px;
+    height: 100%;
+    box-sizing: border-box;
   }
-  
-  .ui-kit-block__inner img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+  .ui-kit-block__inner {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
   }
-  
-  @supports (display: flex) {
-    .ui-kit-block {
-      height: 100%;
-      box-sizing: border-box;
-    }
-  
-    .ui-kit-block__inner {
-      display: flex;
-      height: 100%;
-      box-sizing: border-box;
-    }
-  
-    .ui-kit-block__buffer {
-      margin: auto;
-    }
+
+  .ui-kit-block__buffer {
+    margin: auto;
   }
+}

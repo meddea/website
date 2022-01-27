@@ -167,7 +167,7 @@ function color_block(containerData, theme, color, label) {
   return output;
   }
   
-  function ui_kit_block(containerData, name, type) {
+  function ui_kit_block(containerData, name, type, bg='#FFFFFF') {
   let elem = {
   template: '',
   class: name,
@@ -186,7 +186,7 @@ function color_block(containerData, theme, color, label) {
   
   let output = `${container.call(this, containerData, "100_50_33_33_33")}
   <div class="ui-kit-block">
-  <div class="ui-kit-block__inner">
+  <div class="ui-kit-block__inner" style="background-color: ${bg}">
   <div class="ui-kit-block__buffer">
   ${elem.template}
   </div>
@@ -201,7 +201,7 @@ function color_block(containerData, theme, color, label) {
   
   output += `${container.call(this, containerData, "100_50_33_33_33")}
   <div class="ui-kit-block">
-  <div class="ui-kit-block__inner">
+  <div class="ui-kit-block__inner" style="background-color: ${bg}">
   <div class="ui-kit-block__buffer">
   ${elem.template}
   </div>
@@ -216,7 +216,7 @@ function color_block(containerData, theme, color, label) {
   
   output += `${container.call(this, containerData, "100_50_33_33_33")}
   <div class="ui-kit-block">
-  <div class="ui-kit-block__inner">
+  <div class="ui-kit-block__inner" style="background-color: ${bg}">
   <div class="ui-kit-block__buffer">
   ${elem.template}
   </div>
@@ -231,7 +231,7 @@ function color_block(containerData, theme, color, label) {
   
   output += `${container.call(this, containerData, "100_50_33_33_33")}
   <div class="ui-kit-block">
-  <div class="ui-kit-block__inner">
+  <div class="ui-kit-block__inner" style="background-color: ${bg}">
   <div class="ui-kit-block__buffer">
   ${elem.template}
   </div>

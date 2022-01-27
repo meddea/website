@@ -2,6 +2,8 @@
 <html lang="{{ site.language }}">
   <head>
     <title>{{ title }}</title>
+    {% include 'partials/favicon.njk' %}
+
     <meta charset="utf-8">
     <meta name="description" content="Design-system: ui kit for {{ site.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +19,8 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/menu/main-menu__link.css">
     <link rel="stylesheet" href="/css/menu/main-menu__link--current.css">
-    <link rel="stylesheet" href="/css/menu/burger-button.css">
+    <link rel="stylesheet" href="/css/button-1.css">
+    <link rel="stylesheet" href="/css/button-2.css">
     <link rel="stylesheet" href="/css/utils.css">
 
     {% include 'partials/js-detect.njk' %}
