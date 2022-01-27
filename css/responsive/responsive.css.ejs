@@ -2,4 +2,27 @@
 permalink: css/responsive/responsive.css
 ---
 
-<%- include("../../node_modules/elements/_includes/css/responsive/responsive.css.ejs"); %>
+.responsive { 
+    zoom: 1; 
+  }
+  
+  .responsive:before,
+  .responsive:after { 
+    content: "";
+    display: table; 
+  }
+  
+  .responsive:after {
+    clear: both; 
+  }
+  
+  @supports (display: flex) {
+    .responsive::before,
+    .responsive::after {
+      content: none;
+    }
+    .responsive {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }

@@ -2,7 +2,54 @@
 permalink: css/responsive/max-width.css
 ---
 
-<%- include("../../node_modules/elements/_includes/css/responsive/max-width.css.ejs"); %>
+<% let containerMaxWidth = max_width.max_width; %>
+<% let containerGap = max_width.gap; %>
+
+<% for(let param in containerGap) { %>
+  <% if(param === 'padding' ) { %>
+    .max-width {
+      margin: 0 auto;
+      max-width: <%= containerMaxWidth - containerGap['padding']*2 %>px;
+      padding: <%= containerGap['padding'] %>px;
+    }
+  <% } %>
+
+  <% if(param == 'desktop' && Object.keys(containerGap[param]).length > 0) { %>
+    @media (min-width: <%= responsive.MEDIA.desktop %>px) {
+      .max-width {
+        padding: <%= containerGap[param].padding %>px;
+        max-width: <%= containerMaxWidth - containerGap[param].padding*2 %>px;
+      }
+    }
+  <% } %>
+
+  <% if(param == 'laptop' && Object.keys(containerGap[param]).length > 0) { %>
+    @media (min-width: <%= responsive.MEDIA.laptop %>px) {
+      .max-width {
+        padding: <%= containerGap[param].padding %>px;
+        max-width: <%= containerMaxWidth - containerGap[param].padding*2 %>px;
+      }
+    }
+  <% } %>
+
+  <% if(param == 'tablet' && Object.keys(containerGap[param]).length > 0) { %>
+    @media (min-width: <%= responsive.MEDIA.tablet %>px) {
+      .max-width {
+        padding: <%= containerGap[param].padding %>px;
+        max-width: <%= containerMaxWidth - containerGap[param].padding*2 %>px;
+      }
+    }
+  <% } %>
+
+  <% if(param == 'phone' && Object.keys(containerGap[param]).length > 0) { %>
+    @media (min-width: <%= responsive.MEDIA.phone %>px) {
+      .max-width {
+        padding: <%= containerGap[param].padding %>px;
+        max-width: <%= containerMaxWidth - containerGap[param].padding*2 %>px;
+      }
+    }
+  <% } %>
+<% } %>
 
 
 .buffer-max_width {

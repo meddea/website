@@ -2,11 +2,185 @@
 permalink: css/header.css
 ---
 
-<%- include("../../node_modules/elements/_includes/css/header/simple/ie5.css.ejs"); %>
-<%- include("../../node_modules/elements/_includes/css/header/simple/ie7.css"); %>
-<%- include("../../node_modules/elements/_includes/css/header/simple/ie8.css"); %>
-<%- include("../../node_modules/elements/_includes/css/header/simple/mobile.css.ejs"); %>
-<%- include("../../node_modules/elements/_includes/css/header/simple/flex.css.ejs"); %>
+.header {
+  border-bottom: 1px solid #DADADA;
+}
+
+/* logo */
+
+.header__logo {
+  float: left;
+  /* 
+  position: absolute;
+  top: 11px; .header__container padding not calculated 
+  left: <%= responsive.GAP %>px;
+  */
+}
+
+.logo a {
+  display: block;
+  padding: <%= responsive.GAP %>px;
+}
+
+.logo a img {
+  display: block; /* normalize geometry img inside a */
+  width: auto;
+}
+
+/* main-menu */
+
+.header__main-menu-container {
+  float: left;
+  /* margin-left: 110px; spaces for absolutely positioned logo/socials. */
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  padding: <%= responsive.GAP %>px;;
+  display: block;
+  float: left;
+}
+
+.main-menu__link {
+  white-space: nowrap;
+}
+
+.main-menu:before,
+.main-menu:after,
+.header__container:before,
+.header__container:after { 
+  content: "";
+  display: table; 
+}
+
+.main-menu:after,
+.header__container:after {
+  clear: both; 
+}
+
+.main-menu,
+.header__container { 
+  zoom: 1; 
+}
+
+/* containers */
+/* Since IE 7, the max-width property works */
+
+.header__container {
+  position: relative;
+}
+
+/* social */
+
+/* Since IE 8, we can remove for list list-style property. */
+
+.main-menu {
+  list-style: none;
+}
+
+.header__main-menu-burger { /* Burger is not needed if it is not a mobile version and javascript is not connected. */
+  display: none;
+}
+
+@media (max-width: <%= menu.breakpoint - 1 %>px) {
+  .header__logo {
+    position: static;
+  }
+
+  .header__main-menu-container {
+    margin: 0;
+    float: none;
+  }
+
+  .main-menu__item {
+    display: block;
+    float: none; /* Menu items will line up one above the other. */
+    padding: 0;
+  }
+
+  .main-menu__link {
+    display: block;
+  }
+
+  .js .header__main-menu-burger {
+    display: block;
+    /* Coincidentally, the height of the button is equal to the height of the logo, and there is no need to center the button. But if it were not so, you need to add padding for the container. */
+    position: absolute;
+    top: <%= responsive.GAP %>px;
+    right: <%= responsive.GAP %>px;
+  }
+
+  .header__logo {
+    float: none;
+  }
+
+  .js .header__logo {
+    margin-right: auto;
+  }
+
+  .js .header__main-menu-container { /* Default class for menu (with js). */
+    display: none;
+  }
+
+  .js .header__main-menu-container--opened { /* Class for opened menu. */
+    display: block;
+  }
+}
+
+@supports (display: flex) { /* https://developer.mozilla.org/en-US/docs/Web/CSS/@supports */
+  .main-menu::before,
+  .main-menu::after,
+  .header__container::before,
+  .header__container::after {
+    content: none;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__main-menu-burger {
+    display: none;
+  }
+
+  .header__main-menu-container {
+    margin: 0;
+  }
+
+  .header__logo {
+    position: static;
+  }
+
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: <%= menu.breakpoint - 1 %>px) {
+    .header__container {
+      flex-wrap: wrap; /* Let's allow the transfer of elements so that on a small screen they become one under the other. */
+    }
+    
+    .js .header__main-menu-burger {
+      position: static;
+    }
+
+    .header__main-menu-container {
+      width: 100%; /* The menu becomes a dropdown and is transferred to a new row. Should fill the entire screen width. */
+    }
+
+    .main-menu {
+      flex-direction: column;
+    }
+  }
+}
+
 
 <%- include("../menu/main-menu__link.css.ejs"); %>
 <%- include("../menu/main-menu__link--current.css.ejs"); %>

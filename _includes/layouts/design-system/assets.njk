@@ -1,1 +1,32 @@
-{% include "../../../node_modules/elements/_includes/layouts/design-system/assets.njk" %}
+<!Doctype html>
+<html lang="{{ site.language }}">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Design-system: assets for {{ site.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/design-system/assets.css">
+
+    <!-- Menu -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link--current.css">
+    <link rel="stylesheet" href="/css/menu/burger-button.css">
+    <link rel="stylesheet" href="/css/utils.css">
+
+    {% include 'partials/js-detect.njk' %}
+  </head>
+  <body class="assets design-system">
+    {% include 'partials/header.njk' %}
+    {{ content | safe }}
+    <!-- Header -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>

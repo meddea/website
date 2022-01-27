@@ -1,1 +1,51 @@
-{% include "../../../node_modules/elements/_includes/layouts/design-system/color-system.njk" %}
+<!Doctype html>
+<html lang="{{ site.language }}">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Design-system: color system for {{ site.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/design-system/color.css">
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link--current.css">
+    <link rel="stylesheet" href="/css/menu/burger-button.css">
+    <link rel="stylesheet" href="/css/utils.css">
+
+    {% include 'partials/js-detect.njk' %}
+  </head>
+  <body class="design-system">
+    {% include 'partials/header.njk' %}
+    {% max_width max_width %}
+      <h1>{{ title }}</h1>
+      {% for title, colorsKit in colors %}
+        <h2>{{ title }}</h2>
+        {% responsive %}
+
+        {% for theme, param in colorsKit %}
+
+          {% if(param.color or param.label) %}
+            {% color_block containers,theme, param.color, param.label %}
+          {% elif theme == 'color' %}
+            {% set nextColor = colorsKit[theme] %}
+          {% elif theme == 'label' %}
+            {% color_block containers,title, nextColor, colorsKit[theme] %}
+          {% endif %}
+
+        {% endfor %}
+        {% end_responsive %}
+        <div class="spacer-16"></div>
+      {% endfor %}
+    {% end_max_width %}
+    <!-- Header -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>
