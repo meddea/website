@@ -5,30 +5,20 @@ title: meddea - what we offer
 description: meddea description
 accordion__opened__panel: 1
 accordion__list:
-  - title: Consulting services
+  - title: Decentralised Digital Healthcare Consulting
     content: |
-      The world's leading consultants in building Dynamic Data Economy components. Well boost your team with know-how, point in the right direction and show technical implementation so you can ebenfit from truly decentralized data economy solutions without losing focus on your core business.
+      The convergence of technology and data is propelling us into an era of instant access to information. Artificial Intelligence (AI) continues to broaden the realm of possibilities for purpose-based and insights-based services in the Health sector. “Data” is the life-blood behind new Quality of Life (QOL) advancements, bringing a deeper level of insight, knowledge, and value to Biotechnology and Pharmaceutical companies, healthcare professionals, and, most importantly, the patients themselves. Further fuelled by a growing mistrust in information technologies, we are witnessing the birth of a decentralisation movement where encrypted pairwise communication channels will ensure that Protected Health Information (PHI) is only accessible to intended recipients. These trusted relationships throughout the healthcare system will ultimately empower a Dynamic Data Economy (DDE).
 
-    list: [ "Decentralized Goverance", "Decentralized Identity", "Decentralized Semantic" ]
-  - title: Code and Architecture services
-    content: | 
-      The world's leading consultants in building Dynamic Data Economy components. Well boost your team with know-how, point in the right direction and show technical implementation so you can ebenfit from truly decentralized data economy solutions without losing focus on your core business.
+      **What we do**
+      Our team of experts cover the decentralisation aspects of the three core data domains of Semantic, Inputs, and Governance\:
+    list: [ "The core DDE principles for the Semantic domain are an extension of the FAIR Principles, a set of guidelines to improve the Findability, Accessibility, Interoperability, and Reuse of digital objects. When the overall accuracy, completeness, and consistency of data objects and their relationships are deterministic, **objectual integrity** is achieved.", "The core DDE principles for the Inputs domain are an extension of the Principles of SSI, a set of guidelines intended to bring the highest level of event assurance to any digital authentication system to protect trust and foster a sense of safety and security among end-users. When the origin, accuracy, completeness, and consistency of data, including what happens to it and where it moves, is verifiable, **factual authenticity** is achieved.", "The core DDE principles for the Governance domain are an extension of the European Data Governance Act, a legislative proposal of the European Commission that aims to create a rules framework to facilitate data-sharing. Data veracity is how accurate or truthful the data is, including data quality and how trustworthy the data source, type, and processing are. When agreed by consensus, **consensual veracity** is achieved." ]
 
-    list: [ "Decentralized Goverance", "Decentralized Identity", "Decentralized Semantic" ]
-  - title: Development
-    content: | 
-      The world's leading consultants in building Dynamic Data Economy components. Well boost your team with know-how, point in the right direction and show technical implementation so you can ebenfit from truly decentralized data economy solutions without losing focus on your core business.
 
-    list: [ "Decentralized Goverance", "Decentralized Identity", "Decentralized Semantic" ]
-  - title: Training
-    content: | 
-      The world's leading consultants in building Dynamic Data Economy components. Well boost your team with know-how, point in the right direction and show technical implementation so you can ebenfit from truly decentralized data economy solutions without losing focus on your core business.
-      
-    list: [ "Decentralized Goverance", "Decentralized Identity", "Decentralized Semantic" ]
+
 banner:
   heading: |
     Do you need individual **meeting or consultation?**
-  link: | 
+  link: |
     #
 buttons:
   read_more: Read more

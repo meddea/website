@@ -56,8 +56,19 @@
     <div class="accordion-item__spacer-inner-1"></div>
       <p>{% markdown %} {{ accordion.content }} {% endmarkdown %}</p>
       <ul>
-      {% for item in accordion.list %}
-        <li>{{ item }}</li>
+      {% for item in accordion.sublist %}
+      <li> {% markdown %} {{ item.title }} {% endmarkdown %}
+        {% if item.content %}
+           <p> {% markdown %} {{ item.content}} {% endmarkdown %} </p>
+        {% endif %}
+        <ul>
+          {% for subitem in item.sub_items %}
+          <li>
+            <p> {% markdown %} {{ subitem }} {% endmarkdown %} </p>
+          </li>
+          {% endfor %}
+        </ul>
+      </li>
       {% endfor %}
       </ul>
     <div class="accordion-item__spacer-inner-2"></div>

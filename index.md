@@ -4,53 +4,60 @@ templateEngineOverride: njk, md
 title: meddea
 description: meddea description
 hero:
-  subtitle: | 
-    Comming Up with Creative Solutions
+  subtitle: |
+    Better decisions through authentic data flows
   title: |
-    We care for your **lorem ipsum dolores**
+    We bring **Accurate Real World data** for patient centric precision medicine.
   text: |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  link: | 
-    /сonsulting-services
+    We bring to the healthcare ecosystem the synergetic Dynamic Data Economy vision where information flows securely between healthcare providers.
+  link: |
+    /digital-healthcare-consulting
 services_title: |
-  The service
-  you **will get**
+  Services to **securely** boost your data flows in **Digital Health**
+
 cards_list:
-  - title: | 
-      Consulting services
-    text: | 
-      The world's leading consultants in building Dynamic Data Economy components.
-    link: | 
-      /сonsulting-services
-  - title: |  
-      Code and Architecture services
-    text: | 
-      Our experts reviews ensure your systems would meet highest security standards, data protection regulation.
-    link: | 
-      /сode-and-architecture-services
-  - title: | 
-      Development
-    text: | 
-      A trusted pair of hands to make sure that you can leverage power of DDE in your products.
-    link: | 
-      /development
   - title: |
-      Training
-    text: | 
-      The world's leading consultants in building Dynamic Data Economy components.
-    link: | 
-      /training
-proposal: 
+      Decentralised Digital Healthcare Consulting
+    text: |
+      Propelling healthcare into an era of instant access to accurate information to improve Quality of Life (QoL) advancements Data Transformation Services are designed to bring value to biotechnology and pharmaceutical companies, healthcare professionals, and, most importantly, the patients themselves.
+    link: |
+      /digital-healthcare-consulting
+  - title: |
+      Data Transformation Services
+    text: |
+      Overlays Capture Architecture (OCA) enables seamless data transformation from one format or structure to another. From raw data to processed or from unstructured to structured, we provide interoperable forms to map Real World Data (RWD) or legacy data alike to standard capture bases.
+    link: |
+      /data-transformation-services
+  - title: |
+      Architecture & Code Review
+    text: |
+      Ensures your systems meet the highest security standards and data protection requirements. Our experts in decentralised digital technologies will review your system from a new perspective.
+    link: |
+      /consulting-services
+  - title: |
+      From PoC to Products
+    text: |
+      Bringing disruptive innovations to life requires boldness to articulate the vision and intellectual honesty to avoid costly shortcuts. Our pioneer experts will ensure that your development roadmap from PoC to Product is aligned with new technologies and avoid expensive shortcuts.
+    link: |
+      /poc
+proposal:
   heading: |
     Who **we are** and what **we can do** for you?
-  text: | 
-    MeDDEa specialized in enterprise-grade management and technical consultancy services for a Dynamic Data Economy (DDE) across the three domains of access management, identity managementm, and data management.
+  text: |
+    **Mission**
+
+    MeDDEa’s mission is to federate patients and healthcare actors into a safe and trusted digital world, excluding no one. We will achieve our goals by swiftly bringing together recognised technological innovations in decentralised semantics and authentication. Built on a decentralised infrastructure designed with security at its core, MeDDEa, within two years, will deliver the first enterprise products (Trusted Digital Health Assistant) and services (Health Data Sharing Engine)  for capturing and sharing accurate real world data.
+
+    **Genesis**
+
+    MeDDEa Solutions AG is born out of EU Horizon 2020 projects aimed at bringing to market innovations in the realm of data portability and self-sovereign identity. Founded by the pioneers of the Dynamic Data Economy, a vision of a digital economy where organisations and individuals regain their digital independence, MeDDEa team combines experiences in decentralised technologies, clinical data management and enterprise digital transformation.
+
 banner:
   heading: |
     Do you need individual **meeting or consultation?**
-  link: | 
-    #
-contact: 
+  link: |
+    #contact-us
+contact:
   heading: |
     Contact us
   subtitle: |
@@ -60,8 +67,8 @@ contact:
     Grosspeteranlage 29
     4052 Basel
     Swizerland
-  link: |
-    https://www.google.com/maps/place/Spaces+-+Basel,+Grosspeter+Tower/@47.5442757,7.6030794,16.25z/data=!4m5!3m4!1s0x4791b836437873c5:0x3741b3ea9de33c59!8m2!3d47.5450004!4d7.6026437
+
+    VAT CHE-244.291.045
 buttons:
   read_more: Read more
   contact_us: Contact us

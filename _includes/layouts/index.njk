@@ -170,44 +170,24 @@
           <div class="contact-us__spacer-inner-1"></div>
           {% responsive %}
             {% container containers, "100_100_100_50_50" %}
-            <form>
-              {% responsive %}
-                {% container containers, "100_50_50_50_50" %}
-                  {% buffer buffer %}
-                    <label for="user-name" class="visually-hidden">Enter your name</label>
-                    <input type="text" placeholder="Name" class="field" name="user-name" id="user-name">
-                  {% end_buffer %}
-                {% end_container %}
-                {% container containers, "100_50_50_50_50" %}
-                  {% buffer buffer %}
-                    <label for="user-email" class="visually-hidden">Enter your mail</label>
-                    <input type="email" placeholder="Email" class="field" name="user-email" id="user-email">
-                  {% end_buffer %}
-                {% end_container %}
-
-                {% container containers, "100_100_100_100_100" %}
-                  {% buffer buffer %}
-                    <label for="user-text" class="visually-hidden">Enter your mail</label>
-                    <textarea name="user-text" id="user-text" class="field"></textarea>
-                  {% end_buffer %}
-                {% end_container %}
-                {% container containers, "100_100_100_100_100" %}
-                  {% responsive %}
-                    <div class="float-right ml-auto">
-                      {% buffer buffer %}
-                        <button type="submit" class="button-2">{{ buttons.contact_us }}</button>
-                      {% end_buffer %}
-                    </div>
-                  {% end_responsive %}
-                {% end_container %}
-              {% end_responsive %}
-            </form>
+            <div class="contact-us__address">
+              <address>
+                <p> If you are searching</p>
+                <ul>
+                  <li> insights for your digital transformation,</li>
+                  <li> a partner for harmonising your data,</li>
+                  <li> a direct contact with our deep-stack developers</li>
+                </ul>
+                <p> or have any other questions (pricing, implementation).</p>
+                <a class="p" href="mailto:contact@meddea.global"> contact@meddea.global </a>
+              </address>
+            </div>
           {% end_container %}
           {% container containers, "100_100_100_50_50" %}
             <div class="contact-us__address">
             <address>
               <h3>{% markdown %}{{ contact.subtitle }}{% endmarkdown %}</h3>
-              <a class="p" href="{{ contact.link }}">{% markdown %}{{ contact.text }}{% endmarkdown %}</a>
+              <p>{% markdown %}{{ contact.text }}{% endmarkdown %}</p>
             </address>
             </div>
           {% end_container %}
