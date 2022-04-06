@@ -1,0 +1,58 @@
+
+/*  hide content for accessibility */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/* for a parrent image's link  - IE10 and lower make outline for images */
+
+a img {
+  border:none;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.p-l-24 {
+  padding-left: 24px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.list-reset li::before {
+  content: none;
+}

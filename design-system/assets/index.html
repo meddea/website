@@ -1,0 +1,296 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>Assets</title>
+
+    <link type="image/x-icon" rel="icon" href="/img/favicon.ico">
+<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="/img/favicon-32x32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="/img/favicon-96x96.png">
+<link type="image/png" sizes="120x120" rel="icon" href="/img/favicon-120x120.png">
+<link type="image/png" sizes="144x144" rel="icon" href="/img/favicon-144x144.png">
+    <meta charset="utf-8">
+    <meta name="description" content="Design-system: assets for starter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/design-system/assets.css">
+
+    <!-- Menu -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link--current.css">
+    <link rel="stylesheet" href="/css/menu/burger-button.css">
+    <link rel="stylesheet" href="/css/utils.css">
+
+    <script>
+  (function() {
+    var html = document.getElementsByTagName('html')[0];
+
+    if(html) {
+      html.className += html.className ? " js" : "js";
+    }
+
+    if (typeof SVGRect !== "undefined") {
+      html.className +=html.className ? " svg" : "svg";
+      window.svg = true;
+    }
+
+    function support_format_webp() {
+      var elem = document.createElement('canvas');
+
+      if (!!(elem.getContext && elem.getContext('2d')))
+      {
+        // was able or not to get WebP representation
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+      }
+      else
+      {
+        // very old browser like IE 8, canvas not supported
+        return false;
+      }
+    }
+
+    if(support_format_webp()) {
+      html.className += ' webp'
+    }
+  })();
+
+</script>
+  </head>
+  <body class="assets design-system">
+    <div class="header">
+<div class="buffer-max_width">
+  <header>
+    <div class="header__container max-width">
+      <div class="header__logo logo" role="banner">
+        <a href="/">
+        
+        <picture>
+              <source type="image/webp" srcset="/img/lMjn7nwctz-299.webp">
+              <img src="/img/lMjn7nwctz-299.png" width="300" height="124" alt="starter logo">
+          </picture>
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+      <div class="header__main-menu-container" id="main-menu-container">
+        <nav aria-label="starter main menu">
+          <div class="main-menu__button-container">
+          </div>
+          <ul class="main-menu" role="menubar" aria-label="starter main menu">
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/">HOME</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#about-us">ABOUT US</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#what-we-offer">OFFERING</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#contact-us">CONTACT US</a>
+              </li>
+          
+          </ul>
+        </nav>      
+      </div>
+    </div>
+  </header>
+  </div>
+</div>
+    <div class="max-width">
+<h1>Assets</h1>
+<h2>Logo</h2>
+<div class="responsive">
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/logo.png" width="300" height="124" alt="Logo">
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h2>Favicon</h2>
+<div class="responsive">
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/favicon-16x16.png" width="16" height="16" alt="Favicon">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/favicon-32x32.png" width="32" height="32" alt="Favicon">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/favicon-96x96.png" width="96" height="96" alt="Favicon">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/favicon-120x120.png" width="120" height="120" alt="Favicon">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/favicon-144x144.png" width="144" height="144" alt="Favicon">
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h2>Backgrounds</h2>
+<div class="responsive">
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/banner-1.png" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/bg-subpage-desktop.png" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/bg-subpage-mobile.png" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/bg-subpage-tablet.png" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/photo01.png" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/photo02.png" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/photo03_form-contact.png" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h2>Icons</h2>
+<div class="responsive">
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/icons/facebook.png" width="35" height="35" alt="icon facebook">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/icons/instagram.png" width="35" height="35" alt="icon instagram">
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h2>Buttons</h2>
+<div class="responsive">
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/buttons/button-grey.svg" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-100_50_33_33_33">
+  <div class="assets-block">
+  <div class="assets-block__inner">
+  <div class="assets-block__buffer">
+  <img src="/img/buttons/button-white.svg" width="" height="" alt="">
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+    <!-- Header -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>

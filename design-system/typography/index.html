@@ -1,0 +1,1936 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>Typography</title>
+    <link type="image/x-icon" rel="icon" href="/img/favicon.ico">
+<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="/img/favicon-32x32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="/img/favicon-96x96.png">
+<link type="image/png" sizes="120x120" rel="icon" href="/img/favicon-120x120.png">
+<link type="image/png" sizes="144x144" rel="icon" href="/img/favicon-144x144.png">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Design-system: typography for starter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/design-system/typography.css">
+
+    <!-- Menu -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link--current.css">
+    <link rel="stylesheet" href="/css/menu/burger-button.css">
+    <link rel="stylesheet" href="/css/utils.css">
+
+    <script>
+  (function() {
+    var html = document.getElementsByTagName('html')[0];
+
+    if(html) {
+      html.className += html.className ? " js" : "js";
+    }
+
+    if (typeof SVGRect !== "undefined") {
+      html.className +=html.className ? " svg" : "svg";
+      window.svg = true;
+    }
+
+    function support_format_webp() {
+      var elem = document.createElement('canvas');
+
+      if (!!(elem.getContext && elem.getContext('2d')))
+      {
+        // was able or not to get WebP representation
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+      }
+      else
+      {
+        // very old browser like IE 8, canvas not supported
+        return false;
+      }
+    }
+
+    if(support_format_webp()) {
+      html.className += ' webp'
+    }
+  })();
+
+</script>
+  </head>
+  <body class="typography design-system">
+    <div class="header">
+<div class="buffer-max_width">
+  <header>
+    <div class="header__container max-width">
+      <div class="header__logo logo" role="banner">
+        <a href="/">
+        
+        <picture>
+              <source type="image/webp" srcset="/img/lMjn7nwctz-299.webp">
+              <img src="/img/lMjn7nwctz-299.png" width="300" height="124" alt="starter logo">
+          </picture>
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+      <div class="header__main-menu-container" id="main-menu-container">
+        <nav aria-label="starter main menu">
+          <div class="main-menu__button-container">
+          </div>
+          <ul class="main-menu" role="menubar" aria-label="starter main menu">
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/">HOME</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#about-us">ABOUT US</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#what-we-offer">OFFERING</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#contact-us">CONTACT US</a>
+              </li>
+          
+          </ul>
+        </nav>      
+      </div>
+    </div>
+  </header>
+  </div>
+</div>
+    <div class="max-width">
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <h1 style="text-transform: uppercase;" class="h1">h1</h1>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">600</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    48px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    60px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    24px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    24px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <h1 class="h1">The quick brown fox jump</h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <h2 style="text-transform: uppercase;" class="h2">h2</h2>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">600</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    55px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    36px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    36px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    36px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <h2 class="h2">The quick brown fox jump</h2>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <h3 style="text-transform: uppercase;" class="h3">h3</h3>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">400</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    27px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    40px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    22px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    22px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    0.02em
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    0
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    0.02em
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    0.02em
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <h3 class="h3">The quick brown fox jump</h3>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <p style="text-transform: uppercase;" class="p">p</p>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">400</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    22px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    26px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    14px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    14px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <p class="p">The quick brown fox jump</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <ul style="text-transform: uppercase;" class="ul">ul</ul>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">400</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    22px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    26px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    14px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    14px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <ul class="ul">The quick brown fox jump</ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <div style="text-transform: uppercase;" class="p-small">.p-small</div>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value"></p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    22px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    26px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    14px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    14px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <div class="p-small">The quick brown fox jump</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <div style="text-transform: uppercase;" class="button-1">.button-1</div>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">600</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value">uppercase</p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    16px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    16px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    16px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    16px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <div class="button-1">The quick brown fox jump</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <div style="text-transform: uppercase;" class="button-2">.button-2</div>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">600</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value">uppercase</p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    16px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    16px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    16px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    16px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <div class="button-2">The quick brown fox jump</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <div style="text-transform: uppercase;" class="main-menu__link">.main-menu__link</div>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">400</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value">uppercase</p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    16px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    20px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    14px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    14px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    20px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    23px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    18px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    18px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    0
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    0
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    0
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    0
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <div class="main-menu__link">The quick brown fox jump</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <div style="text-transform: uppercase;" class="label">.label</div>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value"></p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    16px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    16px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    16px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    16px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    24px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    24px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    24px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    24px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <div class="label">The quick brown fox jump</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <div style="text-transform: uppercase;" class="value">.value</div>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value"></p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    16px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    16px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    16px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    16px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    24px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    24px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    24px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    24px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <div class="value">The quick brown fox jump</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <div style="text-transform: uppercase;" class="label-small">.label-small</div>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value">Montserrat, Arial, sans-serif</p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value"></p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    14px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    14px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    14px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    14px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    24px
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    24px
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    24px
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    24px
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <div class="label-small">The quick brown fox jump</div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+      
+
+      <div class="buffer-default">
+      <div class="typography-block">
+        <div class="typography-block__element">
+          
+          
+          <b style="text-transform: uppercase;" class="b">b</b>
+          
+        </div>
+        <div class="typography-block__definitions responsive">
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Typeface: </p>
+              <p class="value"></p>
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Weight: </p>
+              <p class="value">800</p>  
+          </div>
+          <div class="typography-block__definitions-item responsive">
+              <p class="label">Case: </p>
+              <p class="value"></p>  
+            </div>
+        </div>
+        <div class="buffer-x">
+          <div class="typography-block__divider"></div>
+        </div>
+        <div class="typography-block__parameters responsive">
+          <div class="typography-block__parameters-item">
+            <div style="padding-top: 4px"></div>
+            <table class="typography-block__parameters-table">
+              <thead>
+                <tr>
+                  <th>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/6ymnLKAcqW-32.svg">
+              <img src="/img/6ymnLKAcqW-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/iWjzkbsvJR-32.svg">
+              <img src="/img/iWjzkbsvJR-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/LvF8c2yJJp-32.svg">
+              <img src="/img/LvF8c2yJJp-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                  <th>
+                    <picture>
+              <source type="image/svg+xml" srcset="/img/CZZ1C7-CIG-32.svg">
+              <img src="/img/CZZ1C7-CIG-32.png" width="32" height="32" alt="desktop">
+          </picture>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="label-small">Font size</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Line height</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Word spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <th class="label-small">Letter spacing</th>
+                  <td class="value" data-title="Phone">
+                    
+                  </td>
+                  <td class="value" data-title="Tablet">
+                    
+                  </td>
+                  <td class="value" data-title="Laptop">
+                    
+                  </td>
+                  <td class="value" data-title="Desktop">
+                    
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div style="padding-top: 4px"></div>
+          </div>
+          <div class="typography-block__parameters-item">
+            <div class="typography-block__element">
+              
+              <b class="b">The quick brown fox jump</b>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      
+      
+    </div>
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>

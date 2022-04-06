@@ -1,0 +1,31 @@
+
+
+
+
+
+  
+    .max-width {
+      margin: 0 auto;
+      max-width: 1920px;
+      padding: 0px;
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+.buffer-max_width {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.max-width {
+    position: relative;
+}

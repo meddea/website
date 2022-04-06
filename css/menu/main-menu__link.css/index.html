@@ -1,0 +1,36 @@
+/* main menu link */
+
+.main-menu__link {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.main-menu__link:hover,
+.main-menu__link.hover {
+  background-color: #F5F5F5;
+  text-decoration: none;
+}
+
+.main-menu__link:active,
+.main-menu__link.active {
+  background-color: #C4C4C4;
+  outline: none;
+}
+
+.main-menu__link:focus,
+.main-menu__link.focus {
+  border-color: #3d95f7;
+  outline: none;
+}
+
+.main-menu__link:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.main-menu__link:focus-visible {
+  border-color: #3d95f7;
+  outline: none;
+}

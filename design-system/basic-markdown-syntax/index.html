@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Markdown Syntax</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="image/x-icon" rel="icon" href="/img/favicon.ico">
+<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="/img/favicon-32x32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="/img/favicon-96x96.png">
+<link type="image/png" sizes="120x120" rel="icon" href="/img/favicon-120x120.png">
+<link type="image/png" sizes="144x144" rel="icon" href="/img/favicon-144x144.png">
+
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/picture.css">
+    <link rel="stylesheet" href="/css/spacers.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <link rel="stylesheet" href="/css/banner.css">
+    <link rel="stylesheet" href="/css/contact-us.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/proposal.css">
+    <link rel="stylesheet" href="/css/field.css">
+    <link rel="stylesheet" href="/css/button-1.css">
+    <link rel="stylesheet" href="/css/button-2.css">
+    <link rel="stylesheet" href="/css/social-link.css">
+
+    <!-- Menu -->
+    <link rel="stylesheet" href="/css/header.css">
+
+    <script>
+  (function() {
+    var html = document.getElementsByTagName('html')[0];
+
+    if(html) {
+      html.className += html.className ? " js" : "js";
+    }
+
+    if (typeof SVGRect !== "undefined") {
+      html.className +=html.className ? " svg" : "svg";
+      window.svg = true;
+    }
+
+    function support_format_webp() {
+      var elem = document.createElement('canvas');
+
+      if (!!(elem.getContext && elem.getContext('2d')))
+      {
+        // was able or not to get WebP representation
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+      }
+      else
+      {
+        // very old browser like IE 8, canvas not supported
+        return false;
+      }
+    }
+
+    if(support_format_webp()) {
+      html.className += ' webp'
+    }
+  })();
+
+</script>
+  </head>
+  <body>
+    <div class="header">
+<div class="buffer-max_width">
+  <header>
+    <div class="header__container max-width">
+      <div class="header__logo logo" role="banner">
+        <a href="/">
+        
+        <picture>
+              <source type="image/webp" srcset="/img/lMjn7nwctz-299.webp">
+              <img src="/img/lMjn7nwctz-299.png" width="300" height="124" alt="starter logo">
+          </picture>
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+      <div class="header__main-menu-container" id="main-menu-container">
+        <nav aria-label="starter main menu">
+          <div class="main-menu__button-container">
+          </div>
+          <ul class="main-menu" role="menubar" aria-label="starter main menu">
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/">HOME</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#about-us">ABOUT US</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#what-we-offer">OFFERING</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#contact-us">CONTACT US</a>
+              </li>
+          
+          </ul>
+        </nav>      
+      </div>
+    </div>
+  </header>
+  </div>
+</div>
+
+    <div class="max-width">
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<h3>Heading level 3</h3>
+<h4>Heading level 4</h4>
+<h5>Heading level 5</h5>
+<h6>Heading level 6</h6>
+<h1>Heading level 1</h1>
+<h2>Heading level 2</h2>
+<p>I really like using Markdown.</p>
+<p>I think I’ll use it to format all of my documents from now on.</p>
+<p>First line with two spaces after.<br>
+And the next line.</p>
+<p>First line with the HTML tag after.<br><br>
+And the next line.</p>
+<p>I just love <strong>bold text</strong>.</p>
+<p>I just love <strong>bold text</strong>.</p>
+<p>Love <strong>is</strong> bold</p>
+<p>Italicized text is the <em>cat’s meow</em>.</p>
+<p>Italicized text is the <em>cat’s meow</em>.</p>
+<p>A<em>cat</em>meow.</p>
+<p>This text is <em><strong>really important</strong></em>.</p>
+<p>This text is <em><strong>really important</strong></em>.</p>
+<p>This text is <strong><em>really important</em></strong>.</p>
+<p>This text is <strong><em>really important</em></strong>.</p>
+<p>This is really <em><strong>very</strong></em> important text</p>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+</blockquote>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+<p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
+</blockquote>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+<blockquote>
+<p>The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<h4>The quarterly results look great!</h4>
+<ul>
+<li>Revenue was off the chart.</li>
+<li>Profits were higher than ever.</li>
+</ul>
+<p><em>Everything</em> is going according to <strong>plan</strong>.</p>
+</blockquote>
+<h3>lists</h3>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ol>
+<!-- end of the list -->
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ol>
+<!-- end of the list -->
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ol>
+<!-- end of the list -->
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item
+<ol>
+<li>Indented item</li>
+<li>Indented item</li>
+</ol>
+</li>
+<li>Fourth item</li>
+</ol>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ul>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ul>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+<li>Fourth item</li>
+</ul>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item
+<ul>
+<li>Indented item</li>
+<li>Indented item</li>
+</ul>
+</li>
+<li>Fourth item</li>
+</ul>
+<!-- end of the list -->
+<ul>
+<li>1968. A great year!</li>
+<li>I think 1969 was second best.</li>
+</ul>
+<ul>
+<li>
+<p>This is the first list item.</p>
+</li>
+<li>
+<p>Here’s the second list item.</p>
+<p>I need to add another paragraph below the second list item.</p>
+</li>
+<li>
+<p>And here’s the third list item.</p>
+</li>
+</ul>
+<!-- end of the list -->
+<ul>
+<li>
+<p>This is the first list item.</p>
+</li>
+<li>
+<p>Here’s the second list item.</p>
+<blockquote>
+<p>A blockquote would look great below the second list item.</p>
+</blockquote>
+</li>
+<li>
+<p>And here’s the third list item.</p>
+</li>
+</ul>
+<ol>
+<li>
+<p>Open the file.</p>
+</li>
+<li>
+<p>Find the following code block on line 21:</p>
+<pre><code> &lt;html&gt;
+   &lt;head&gt;
+     &lt;title&gt;Test&lt;/title&gt;
+   &lt;/head&gt;
+</code></pre>
+</li>
+<li>
+<p>Update the title to match the name of your website.</p>
+</li>
+</ol>
+<!-- end of the list -->
+<ol>
+<li>
+<p>Open the file containing the Linux mascot.</p>
+</li>
+<li>
+<p>Marvel at its beauty.</p>
+<p><img src="../../img/tux.png" alt="Tux, the Linux mascot"></p>
+</li>
+<li>
+<p>Close the file.</p>
+</li>
+</ol>
+<!-- end of the list -->
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item
+<ul>
+<li>Indented item</li>
+<li>Indented item</li>
+</ul>
+</li>
+<li>Fourth item</li>
+</ol>
+<p>At the command prompt, type <code>nano</code>.</p>
+<p><code>Use `code` in your Markdown file.</code></p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+<hr>
+<hr>
+<hr>
+<p>My favorite search engine is <a href="https://duckduckgo.com">Duck Duck Go</a>.</p>
+<p>My favorite search engine is <a href="https://duckduckgo.com" title="The best search engine for privacy">Duck Duck Go</a>.</p>
+<p><a href="https://www.markdownguide.org">https://www.markdownguide.org</a><br>
+<a href="mailto:fake@example.com">fake@example.com</a></p>
+<p>I love supporting the <strong><a href="https://eff.org">EFF</a></strong>.<br>
+This is the <em><a href="https://www.markdownguide.org">Markdown Guide</a></em>.<br>
+See the section on <a href="#code"><code>code</code></a>.</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle">hobbit-hole</a></li>
+<li>[hobbit-hole] <a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle" title="Hobbit lifestyles">2</a></li>
+</ul>
+<p>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends<br>
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to<br>
+eat: it was a <a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle" title="Hobbit lifestyles">hobbit-hole</a>, and that means comfort.</p>
+<p>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends<br>
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to<br>
+eat: it was a <a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle" title="Hobbit lifestyles">hobbit-hole</a>, and that means comfort.</p>
+<p><img src="../../img/san-juan-mountains.jpg" alt="The San Juan Mountains are beautiful!" title="San Juan Mountains"></p>
+<p><a href="https://www.flickr.com/photos/beaurogers/31833779864/in/photolist-Qv3rFw-34mt9F-a9Cmfy-5Ha3Zi-9msKdv-o3hgjr-hWpUte-4WMsJ1-KUQ8N-deshUb-vssBD-6CQci6-8AFCiD-zsJWT-nNfsgB-dPDwZJ-bn9JGn-5HtSXY-6CUhAL-a4UTXB-ugPum-KUPSo-fBLNm-6CUmpy-4WMsc9-8a7D3T-83KJev-6CQ2bK-nNusHJ-a78rQH-nw3NvT-7aq2qf-8wwBso-3nNceh-ugSKP-4mh4kh-bbeeqH-a7biME-q3PtTf-brFpgb-cg38zw-bXMZc-nJPELD-f58Lmo-bXMYG-bz8AAi-bxNtNT-bXMYi-bXMY6-bXMYv"><img src="../../img/shiprock.jpg" alt="An old rock in the desert" title="Shiprock, New Mexico by Beau Rogers"></a></p>
+<p>* Without the backslash, this would be a bullet in an unordered list.</p>
+<p>This <strong>word</strong> is bold. This <em>word</em> is italic.</p>
+</div>
+    <!-- Header -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>

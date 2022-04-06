@@ -1,0 +1,62 @@
+
+.burger-button {
+  width: 18px;
+  height: 12px;
+  padding: 13px 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxOCAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cGF0aCBkPSJNMCAxMkgxOFYxMEgwVjEyWk0wIDdIMThWNUgwVjdaTTAgMFYySDE4VjBIMFoiIGZpbGw9IiMyRDJEMkQiLz4NCjwvc3ZnPg0K");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 12px;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+
+@media(min-width: 768px) {
+    .burger-button {
+        width: 58px;
+        height: 51px;
+        background-size: 40px 30px;
+    }
+}
+
+.burger-button--opened {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNCAxLjQxTDEyLjU5IDBMNyA1LjU5TDEuNDEgMEwwIDEuNDFMNS41OSA3TDAgMTIuNTlMMS40MSAxNEw3IDguNDFMMTIuNTkgMTRMMTQgMTIuNTlMOC40MSA3TDE0IDEuNDFaIiBmaWxsPSIjMkQyRDJEIi8+DQo8L3N2Zz4NCg==");
+}
+
+.burger-button:hover,
+.burger-button.hover {
+    background-color: #F5F5F5;
+}
+
+.burger-button:focus,
+.burger-button.focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.burger-button:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.burger-button:focus-visible,
+.burger-button.focus-visible {
+    border-color: #000000;
+    outline: none;
+}
+
+.burger-button:disabled,
+.burger-button.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.burger-button:active,
+.burger-button.active {
+    background-color: #C4C4C4;
+    outline: none;
+    border-color: transparent;
+}

@@ -1,0 +1,132 @@
+
+
+    
+      
+      
+        .buffer-default {
+          padding : 8px;
+        }
+      
+  
+      
+  
+      
+  
+  
+      
+  
+  
+      
+    
+
+    
+      
+      
+        .buffer-max_width {
+          padding : 36px;
+        }
+      
+  
+      
+  
+      
+  
+  
+      
+  
+  
+      
+    
+      
+      
+  
+      
+  
+      
+  
+  
+      
+  
+  
+      
+        @media (min-width: 600px) {
+          .buffer-max_width {
+          
+            padding: 50px;
+          
+          }
+        }
+      
+    
+      
+      
+  
+      
+  
+      
+  
+  
+      
+        @media (min-width: 768px) {
+          .buffer-max_width {
+          
+            padding: 120px;
+          
+          }
+        }
+      
+  
+  
+      
+    
+      
+      
+  
+      
+  
+      
+        @media (min-width: 1240px) {
+          .buffer-max_width {
+          
+            padding: 120px;
+          
+          }
+        }
+      
+  
+  
+      
+  
+  
+      
+    
+      
+      
+  
+      
+        @media (min-width: 1440px) {
+          .buffer-max_width {
+          
+            padding: 120px;
+          
+          }
+        }
+      
+  
+      
+  
+  
+      
+  
+  
+      
+    
+
+
+
+@media(max-width: 320px) {
+    .buffer-max_width {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

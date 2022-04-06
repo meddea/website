@@ -1,0 +1,62 @@
+
+.services {
+  position: relative;
+}
+
+.services__bg {
+  position: absolute;
+  z-index: 3;
+  opacity: 0.3;
+  top: -163px;
+  left: 18px;
+  width: 69.33%;
+  padding-bottom: 134%;
+  background-image: url(../img/photo01.png);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.webp .services__bg {
+  background-image: url("../img/photo01.webp");
+}
+
+@media (min-width: 768px) {
+  .services__bg {
+    opacity: 1;
+    width: 31.5%;
+    padding-bottom: 64.66%;
+    top: 35px;
+    left: 0;
+    background-size: 100% auto;
+    background-position: top 0 left 0;
+  }
+}
+
+@media (min-width: 1240px) {
+  .services__bg {
+    width: 32%;
+    padding-bottom: 53%;
+    top: 230px;
+    left: 0;
+  }
+}
+
+.services__content {
+  position: relative;
+  z-index: 4;
+  padding: 36px;
+}
+  
+@media (min-width: 768px) {
+  .services__content {
+    padding: 50px;
+  }
+}
+  
+@media (min-width: 1240px) {
+  .services__content {
+    padding-left: 0;
+    padding-right: 120px;
+  }
+}

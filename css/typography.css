@@ -1,0 +1,787 @@
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/montserrat-400.woff2') format('woff2'),
+       url('../fonts/montserrat-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/montserrat-600.woff2') format('woff2'),
+       url('../fonts/montserrat-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local(''),
+       url('../fonts/montserrat-800.woff2') format('woff2'),
+       url('../fonts/montserrat-800.woff') format('woff');
+}
+
+
+  
+  
+
+  
+    
+      body {
+      
+        margin : 0;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        color : #000000;
+      
+        background-color : #FFFFFF;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+  
+  
+    
+  
+
+  
+    
+      h1, .h1 {
+      
+        margin : 0;
+      
+        padding : 8px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 24px;
+      
+        font-weight : 600;
+      
+        color : #000000;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+
+    
+      @media (min-width: 600px) {
+        h1, .h1 {
+        
+          font-size : 48px;
+        
+        }
+      }
+    
+  
+    
+
+    
+
+    
+
+    
+      @media (min-width: 768px) {
+        h1, .h1 {
+        
+          font-size : 60px;
+        
+        }
+      }
+    
+
+    
+  
+
+  
+  
+    
+  
+
+  
+    
+      h2, .h2 {
+      
+        margin : 0;
+      
+        padding : 8px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 36px;
+      
+        font-weight : 600;
+      
+        color : #000000;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+
+    
+      @media (min-width: 600px) {
+        h2, .h2 {
+        
+          font-size : 55px;
+        
+        }
+      }
+    
+  
+
+  
+  
+    
+  
+
+  
+    
+      h3, .h3 {
+      
+        margin : 0;
+      
+        padding : 8px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 22px;
+      
+        font-weight : 400;
+      
+        letter-spacing : 0.02em;
+      
+        color : #000000;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+
+    
+      @media (min-width: 600px) {
+        h3, .h3 {
+        
+          font-size : 27px;
+        
+        }
+      }
+    
+  
+    
+
+    
+
+    
+
+    
+      @media (min-width: 768px) {
+        h3, .h3 {
+        
+          letter-spacing : 0;
+        
+          font-size : 40px;
+        
+        }
+      }
+    
+
+    
+  
+
+  
+  
+    
+  
+
+  
+    
+      p, .p {
+      
+        margin : 0;
+      
+        padding : 8px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 14px;
+      
+        font-weight : 400;
+      
+        color : #131313;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+
+    
+      @media (min-width: 600px) {
+        p, .p {
+        
+          font-size : 22px;
+        
+        }
+      }
+    
+  
+    
+
+    
+
+    
+
+    
+      @media (min-width: 768px) {
+        p, .p {
+        
+          font-size : 26px;
+        
+        }
+      }
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      ul {
+      
+        margin : 0;
+      
+        padding : 8px 8px 8px 16px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 14px;
+      
+        font-weight : 400;
+      
+        color : #131313;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+
+    
+      @media (min-width: 600px) {
+        ul {
+        
+          font-size : 22px;
+        
+        }
+      }
+    
+  
+    
+
+    
+
+    
+
+    
+      @media (min-width: 768px) {
+        ul {
+        
+          font-size : 26px;
+        
+        }
+      }
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      .p-small {
+      
+        margin : 0;
+      
+        padding : 8px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 14px;
+      
+        color : #131313;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+
+    
+      @media (min-width: 600px) {
+        .p-small {
+        
+          font-size : 22px;
+        
+        }
+      }
+    
+  
+    
+
+    
+
+    
+
+    
+      @media (min-width: 768px) {
+        .p-small {
+        
+          font-size : 26px;
+        
+        }
+      }
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      .button-1 {
+      
+        padding : 10px 30px;
+      
+        font-size : 16px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-weight : 600;
+      
+        text-transform : uppercase;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      .button-2 {
+      
+        padding : 10px 30px;
+      
+        font-size : 16px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-weight : 600;
+      
+        text-transform : uppercase;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      .main-menu__link {
+      
+        margin : 0;
+      
+        padding : 10px 15px;
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-weight : 400;
+      
+        font-size : 14px;
+      
+        line-height : 18px;
+      
+        letter-spacing : 0;
+      
+        text-decoration : none;
+      
+        text-transform : uppercase;
+      
+        color : #000000;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+
+    
+      @media (min-width: 600px) {
+        .main-menu__link {
+        
+          font-size : 16px;
+        
+          line-height : 20px;
+        
+        }
+      }
+    
+  
+    
+
+    
+
+    
+
+    
+      @media (min-width: 768px) {
+        .main-menu__link {
+        
+          font-size : 20px;
+        
+          line-height : 23px;
+        
+        }
+      }
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      .label {
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 16px;
+      
+        line-height : 24px;
+      
+        color : #939A9C;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      .value {
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 16px;
+      
+        line-height : 24px;
+      
+        color : #000000;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      .label-small {
+      
+        font-family : Montserrat, Arial, sans-serif;
+      
+        font-size : 14px;
+      
+        line-height : 24px;
+      
+        color : #939A9C;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+  
+  
+
+  
+    
+      b {
+      
+        font-weight : 800;
+      
+      }
+    
+
+    
+
+    
+
+    
+
+    
+  
+
+
+.font-weight-600 {
+  font-weight: 600;
+}
+  
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.side-border-title {
+  position: relative;
+  padding-left: 30px;
+}
+
+.services .side-border-title {
+  margin-left: 50px
+}
+
+@media(min-width: 768px) {
+  .services .side-border-title {
+    max-width: 400px;
+    margin-left: 0;
+  }
+}
+
+.side-border-title::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 16px;
+  width: 4px;
+  height: 87%;
+  background-color: #3d95f7;
+}
+
+@media(min-width: 600px) {
+  .side-border-title::before {
+    top: 15px;
+    left: 0;
+    width: 9px;
+    height: 85%;
+  }
+}
+
+.side-border-title h1,
+.side-border-title h2 {
+  padding: 0;
+}
+
+.side-border-title--sub::before {
+  top: 10px;
+  height: 90%;
+}
+
+@media(min-width: 600px) {
+  .side-border-title--sub::before {
+    top: 10px;
+    height: 135px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+ul {
+  list-style: none;
+}
+
+
+ul li {
+  position: relative;
+}
+
+ul li::before {
+  position: absolute;
+  top: 6px;
+  left: -9px;
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #131313;
+  border-radius: 50%;
+}
+
+@media(min-width: 600px) {
+  ul li::before {
+    top: 13px;
+  }
+}

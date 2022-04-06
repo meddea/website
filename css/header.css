@@ -1,0 +1,370 @@
+
+.header {
+  border-bottom: 1px solid #DADADA;
+}
+
+/* logo */
+
+.header__logo {
+  float: left;
+  /* 
+  position: absolute;
+  top: 11px; .header__container padding not calculated 
+  left: 8px;
+  */
+}
+
+.logo a {
+  display: block;
+  padding: 8px;
+}
+
+.logo a img {
+  display: block; /* normalize geometry img inside a */
+  width: auto;
+}
+
+/* main-menu */
+
+.header__main-menu-container {
+  float: left;
+  /* margin-left: 110px; spaces for absolutely positioned logo/socials. */
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu__item {
+  padding: 8px;;
+  display: block;
+  float: left;
+}
+
+.main-menu__link {
+  white-space: nowrap;
+}
+
+.main-menu:before,
+.main-menu:after,
+.header__container:before,
+.header__container:after { 
+  content: "";
+  display: table; 
+}
+
+.main-menu:after,
+.header__container:after {
+  clear: both; 
+}
+
+.main-menu,
+.header__container { 
+  zoom: 1; 
+}
+
+/* containers */
+/* Since IE 7, the max-width property works */
+
+.header__container {
+  position: relative;
+}
+
+/* social */
+
+/* Since IE 8, we can remove for list list-style property. */
+
+.main-menu {
+  list-style: none;
+}
+
+.header__main-menu-burger { /* Burger is not needed if it is not a mobile version and javascript is not connected. */
+  display: none;
+}
+
+@media (max-width: 1439px) {
+  .header__logo {
+    position: static;
+  }
+
+  .header__main-menu-container {
+    margin: 0;
+    float: none;
+  }
+
+  .main-menu__item {
+    display: block;
+    float: none; /* Menu items will line up one above the other. */
+    padding: 0;
+  }
+
+  .main-menu__link {
+    display: block;
+  }
+
+  .js .header__main-menu-burger {
+    display: block;
+    /* Coincidentally, the height of the button is equal to the height of the logo, and there is no need to center the button. But if it were not so, you need to add padding for the container. */
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+
+  .header__logo {
+    float: none;
+  }
+
+  .js .header__logo {
+    margin-right: auto;
+  }
+
+  .js .header__main-menu-container { /* Default class for menu (with js). */
+    display: none;
+  }
+
+  .js .header__main-menu-container--opened { /* Class for opened menu. */
+    display: block;
+  }
+}
+
+@supports (display: flex) { /* https://developer.mozilla.org/en-US/docs/Web/CSS/@supports */
+  .main-menu::before,
+  .main-menu::after,
+  .header__container::before,
+  .header__container::after {
+    content: none;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__main-menu-burger {
+    display: none;
+  }
+
+  .header__main-menu-container {
+    margin: 0;
+  }
+
+  .header__logo {
+    position: static;
+  }
+
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1439px) {
+    .header__container {
+      flex-wrap: wrap; /* Let's allow the transfer of elements so that on a small screen they become one under the other. */
+    }
+    
+    .js .header__main-menu-burger {
+      position: static;
+    }
+
+    .header__main-menu-container {
+      width: 100%; /* The menu becomes a dropdown and is transferred to a new row. Should fill the entire screen width. */
+    }
+
+    .main-menu {
+      flex-direction: column;
+    }
+  }
+}
+
+
+/* main menu link */
+
+.main-menu__link {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.main-menu__link:hover,
+.main-menu__link.hover {
+  background-color: #F5F5F5;
+  text-decoration: none;
+}
+
+.main-menu__link:active,
+.main-menu__link.active {
+  background-color: #C4C4C4;
+  outline: none;
+}
+
+.main-menu__link:focus,
+.main-menu__link.focus {
+  border-color: #3d95f7;
+  outline: none;
+}
+
+.main-menu__link:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.main-menu__link:focus-visible {
+  border-color: #3d95f7;
+  outline: none;
+}
+
+/* main menu link */
+
+.main-menu__link--current {
+  border-bottom-color: #3d95f7;
+}
+
+.burger-button {
+  width: 18px;
+  height: 12px;
+  padding: 13px 10px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxOCAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgICA8cGF0aCBkPSJNMCAxMkgxOFYxMEgwVjEyWk0wIDdIMThWNUgwVjdaTTAgMFYySDE4VjBIMFoiIGZpbGw9IiMyRDJEMkQiLz4NCjwvc3ZnPg0K");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 12px;
+  border-radius: 2px;
+  box-sizing: content-box;
+}
+
+@media(min-width: 768px) {
+    .burger-button {
+        width: 58px;
+        height: 51px;
+        background-size: 40px 30px;
+    }
+}
+
+.burger-button--opened {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0xNCAxLjQxTDEyLjU5IDBMNyA1LjU5TDEuNDEgMEwwIDEuNDFMNS41OSA3TDAgMTIuNTlMMS40MSAxNEw3IDguNDFMMTIuNTkgMTRMMTQgMTIuNTlMOC40MSA3TDE0IDEuNDFaIiBmaWxsPSIjMkQyRDJEIi8+DQo8L3N2Zz4NCg==");
+}
+
+.burger-button:hover,
+.burger-button.hover {
+    background-color: #F5F5F5;
+}
+
+.burger-button:focus,
+.burger-button.focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.burger-button:focus:not(:focus-visible) {
+  border-color: transparent;
+  outline: none;
+}
+
+.burger-button:focus-visible,
+.burger-button.focus-visible {
+    border-color: #000000;
+    outline: none;
+}
+
+.burger-button:disabled,
+.burger-button.disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+.burger-button:active,
+.burger-button.active {
+    background-color: #C4C4C4;
+    outline: none;
+    border-color: transparent;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .header {
+    padding-top: 90px;
+    padding-bottom: 24px;
+  }
+}
+
+.header__container {
+  align-items: start;
+}
+
+.main-menu li::before{
+  content: none;
+}
+
+.main-menu__item {
+  padding: 20px;
+}
+
+
+@media(min-width: 0px) {
+  .main-menu__item {
+    padding: 23px 0;
+  }
+}
+
+@media(min-width: 1440px) {
+  .main-menu__item {
+    padding: 0 38px;
+  }
+}
+
+.logo a {
+  padding: 0;
+}
+
+.logo a img {
+  max-width: 115px;
+  width: 100%;
+}
+
+@media(min-width: 768px) {
+  .logo a img {
+    max-width: 300px;
+  }
+}
+
+.header {
+  border-bottom: 0;
+}
+
+.header__main-menu-burger {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header__logo {
+  width: 300px;
+  margin-top: 20px;
+}
+
+@media(max-width: 767px) {
+  .header__logo {
+    width: 115px;
+  }
+}
+
+@media(min-width: 0px) {
+  .header__logo {
+    margin-top: 0;
+  }
+}

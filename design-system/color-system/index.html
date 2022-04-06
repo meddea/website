@@ -1,0 +1,653 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>Color System</title>
+    <link type="image/x-icon" rel="icon" href="/img/favicon.ico">
+<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="/img/favicon-32x32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="/img/favicon-96x96.png">
+<link type="image/png" sizes="120x120" rel="icon" href="/img/favicon-120x120.png">
+<link type="image/png" sizes="144x144" rel="icon" href="/img/favicon-144x144.png">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Design-system: color system for starter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/design-system/color.css">
+
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link--current.css">
+    <link rel="stylesheet" href="/css/menu/burger-button.css">
+    <link rel="stylesheet" href="/css/utils.css">
+
+    <script>
+  (function() {
+    var html = document.getElementsByTagName('html')[0];
+
+    if(html) {
+      html.className += html.className ? " js" : "js";
+    }
+
+    if (typeof SVGRect !== "undefined") {
+      html.className +=html.className ? " svg" : "svg";
+      window.svg = true;
+    }
+
+    function support_format_webp() {
+      var elem = document.createElement('canvas');
+
+      if (!!(elem.getContext && elem.getContext('2d')))
+      {
+        // was able or not to get WebP representation
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+      }
+      else
+      {
+        // very old browser like IE 8, canvas not supported
+        return false;
+      }
+    }
+
+    if(support_format_webp()) {
+      html.className += ' webp'
+    }
+  })();
+
+</script>
+  </head>
+  <body class="design-system">
+    <div class="header">
+<div class="buffer-max_width">
+  <header>
+    <div class="header__container max-width">
+      <div class="header__logo logo" role="banner">
+        <a href="/">
+        
+        <picture>
+              <source type="image/webp" srcset="/img/lMjn7nwctz-299.webp">
+              <img src="/img/lMjn7nwctz-299.png" width="300" height="124" alt="starter logo">
+          </picture>
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+      <div class="header__main-menu-container" id="main-menu-container">
+        <nav aria-label="starter main menu">
+          <div class="main-menu__button-container">
+          </div>
+          <ul class="main-menu" role="menubar" aria-label="starter main menu">
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/">HOME</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#about-us">ABOUT US</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#what-we-offer">OFFERING</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#contact-us">CONTACT US</a>
+              </li>
+          
+          </ul>
+        </nav>      
+      </div>
+    </div>
+  </header>
+  </div>
+</div>
+    <div class="max-width">
+      <h1>Color System</h1>
+      
+        <h2>Primary</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #3d95f7;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  500
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #3d95f7
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>Background</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #FFFFFF;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  Background
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #FFFFFF
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>Surface</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #FFFFFF;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  White
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #FFFFFF
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #F2F2F2;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  Gray
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #F2F2F2
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #033E8C;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  Primary 900
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #033E8C
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>Border</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #F0F0F0;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  Border
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #F0F0F0
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>On Primary</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #FFFFFF;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  On Primary
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #FFFFFF
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>On Background</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #000000;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  On Background
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #000000
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>On Surface</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #000000;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  White
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #000000
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #131313;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  White Secondary
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #131313
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #FFFFFF;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  Primary 900
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #FFFFFF
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #939A9C;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  Typography
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #939A9C
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>Gray</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #F5F5F5;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  100
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #F5F5F5
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #C4C4C4;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  200
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #C4C4C4
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #C0C0C0;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #000000;">
+  300
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #000000;">
+  #C0C0C0
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #666666;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  400
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #666666
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #4C4C52;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  800
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #4C4C52
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+
+          
+            
+  <div class="container-100_50_33_33_33">
+  <div class="color-block">
+  <div class="color-block__inner">
+  <div style="background-color: #2C2C2F;">
+  <div class="color-block__buffer">
+  <p class="color-block__label" style="color: #FFFFFF;">
+  900
+  </p>
+  <div style="padding-top: 40px"></div>
+  <p class="color-block__hex" style="color: #FFFFFF;">
+  #2C2C2F
+  </p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+        <h2>Black</h2>
+        <div class="responsive">
+
+        
+
+          
+            
+          
+
+        
+        </div>
+        <div class="spacer-16"></div>
+      
+    </div>
+    <!-- Header -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>

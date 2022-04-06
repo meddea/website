@@ -1,0 +1,348 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>UI-Kit</title>
+    <link type="image/x-icon" rel="icon" href="/img/favicon.ico">
+<link type="image/png" sizes="16x16" rel="icon" href="/img/favicon-16x16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="/img/favicon-32x32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="/img/favicon-96x96.png">
+<link type="image/png" sizes="120x120" rel="icon" href="/img/favicon-120x120.png">
+<link type="image/png" sizes="144x144" rel="icon" href="/img/favicon-144x144.png">
+
+    <meta charset="utf-8">
+    <meta name="description" content="Design-system: ui kit for starter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/responsive/max-width.css">
+    <link rel="stylesheet" href="/css/responsive/responsive.css">
+    <link rel="stylesheet" href="/css/responsive/container.css">
+    <link rel="stylesheet" href="/css/responsive/buffer.css">
+
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/design-system/ui-kit.css">
+
+    <!-- header -->
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link.css">
+    <link rel="stylesheet" href="/css/menu/main-menu__link--current.css">
+    <link rel="stylesheet" href="/css/button-1.css">
+    <link rel="stylesheet" href="/css/button-2.css">
+    <link rel="stylesheet" href="/css/utils.css">
+
+    <script>
+  (function() {
+    var html = document.getElementsByTagName('html')[0];
+
+    if(html) {
+      html.className += html.className ? " js" : "js";
+    }
+
+    if (typeof SVGRect !== "undefined") {
+      html.className +=html.className ? " svg" : "svg";
+      window.svg = true;
+    }
+
+    function support_format_webp() {
+      var elem = document.createElement('canvas');
+
+      if (!!(elem.getContext && elem.getContext('2d')))
+      {
+        // was able or not to get WebP representation
+        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+      }
+      else
+      {
+        // very old browser like IE 8, canvas not supported
+        return false;
+      }
+    }
+
+    if(support_format_webp()) {
+      html.className += ' webp'
+    }
+  })();
+
+</script>
+  </head>
+  <body class="ui-kit design-system">
+    <div class="header">
+<div class="buffer-max_width">
+  <header>
+    <div class="header__container max-width">
+      <div class="header__logo logo" role="banner">
+        <a href="/">
+        
+        <picture>
+              <source type="image/webp" srcset="/img/lMjn7nwctz-299.webp">
+              <img src="/img/lMjn7nwctz-299.png" width="300" height="124" alt="starter logo">
+          </picture>
+        </a>
+      </div>
+      <div class="header__main-menu-burger burger"></div>
+      <div class="header__main-menu-container" id="main-menu-container">
+        <nav aria-label="starter main menu">
+          <div class="main-menu__button-container">
+          </div>
+          <ul class="main-menu" role="menubar" aria-label="starter main menu">
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/">HOME</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#about-us">ABOUT US</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#what-we-offer">OFFERING</a>
+              </li>
+          
+              <li class="main-menu__item" role="none">
+                  <a class="main-menu__link
+                  " 
+                  
+                  href="/#contact-us">CONTACT US</a>
+              </li>
+          
+          </ul>
+        </nav>      
+      </div>
+    </div>
+  </header>
+  </div>
+</div>
+    <div class="max-width">
+<h1>UI-Kit</h1>
+<h2>Link</h2>
+<h3>main-menu__link</h3>
+<div class="responsive">
+<div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link" href="#">Rest</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link hover" href="#">Hover</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link active" href="#">Pressed</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link focus" href="#">Focused</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h3>main-menu__link–current</h3>
+<div class="responsive">
+<div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link main-menu__link--current" href="#">Rest</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link main-menu__link--current hover" href="#">Hover</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link main-menu__link--current active" href="#">Pressed</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="main-menu__link main-menu__link--current focus" href="#">Focused</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h2>Button</h2>
+<h3>burger-button</h3>
+<div class="responsive">
+<div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button hover" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button active" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button focus" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h3>burger-button–opened</h3>
+<div class="responsive">
+<div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button burger-button--opened" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button burger-button--opened hover" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button burger-button--opened active" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <button class="burger-button burger-button--opened focus" type="button"></button>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h3>button-1</h3>
+<div class="responsive">
+<div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="button-1" href="#">Rest</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="button-1 hover" href="#">Hover</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="button-1 active" href="#">Pressed</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #FFFFFF">
+  <div class="ui-kit-block__buffer">
+  <a class="button-1 focus" href="#">Focused</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+<h3>button-2</h3>
+<div class="responsive">
+<div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #000000">
+  <div class="ui-kit-block__buffer">
+  <a class="button-2" href="#">Rest</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #000000">
+  <div class="ui-kit-block__buffer">
+  <a class="button-2 hover" href="#">Hover</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #000000">
+  <div class="ui-kit-block__buffer">
+  <a class="button-2 active" href="#">Pressed</a>
+  </div>
+  </div>
+  </div>
+  </div><div class="container-100_50_33_33_33">
+  <div class="ui-kit-block">
+  <div class="ui-kit-block__inner" style="background-color: #000000">
+  <div class="ui-kit-block__buffer">
+  <a class="button-2 focus" href="#">Focused</a>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+    <!-- Header -->
+    <script src="/js/utils.js"></script>
+    <script src="/js/header.js"></script>
+  </body>
+</html>
