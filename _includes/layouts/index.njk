@@ -32,175 +32,46 @@
     <!-- Menu -->
     <link rel="stylesheet" href="/css/header.css">
 
-    {% include 'partials/js-detect.njk' %}
+    <style>
+body {
+  background-color: #16191e;
+  color: #fff;
+}
+
+    #logo {
+      background-image: url('img/meddea_white.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 650px;
+      height: 530px;
+      margin: 0 auto;
+    }
+
+    h4 {
+      font-weight: normal;
+      text-align: center;
+      line-height: 150%;
+      font-size: 1.1em;
+    }
+
+    a { color: #fff; }
+    </style>
   </head>
   <body>
-    {% include 'partials/header.njk' %}
-    {% max_width max_width %}
 
-      <div class="hero">
-        <div class="hero__spacer-top"></div>
-        <section>
-          <div class="hero__inner">
-            {% responsive %}
-            {% container containers, "100_100_100_40_40" %}
-            <div class="hero__content">
-              <p>
-                {% markdown %}{{ hero.subtitle }}{% endmarkdown %}
-              </p>
-              <div class="side-border-title">
-                <h1>
-                  {% markdown %}{{ hero.title }}{% endmarkdown %}
-                </h1>
-              </div>
-              <div class="spacer-24"></div>
-              <div class="p-l-24">
-                <p>
-                  {% markdown %}{{ hero.text }}{% endmarkdown %}
-                </p>
-                <div class="spacer-24"></div>
-                {% buffer buffer %}
-                  <a class="button-1" href="{{ hero.link }}">{{ buttons.read_more }}</a>
-                {% end_buffer %}
-              </div>
-            </div>
-          {% end_container %}
-          {% container containers, "100_100_100_60_60" %}
-          {% end_container %}
-          {% end_responsive %}
-          </div>
-        </section>
-      </div>
+    <div id="logo"></div>
+    <h4 class="text-white">
+      MeDDEa Solutions AG<br>
+      Grosspeter Tower, 21st floor<br>
+      Grosspeteranlage 29<br>
+      4052 Basel<br>
+      Swizerland<br>
 
-      <div class="services">
-        <span id="what-we-offer"></span>
-        <section>
-          <div class="services__bg"></div>
-          <div class="services__spacer-top"></div>
-          {% responsive %}
-          {% container containers, "100_100_50_40_40" %}
-          {% end_container %}
-          {% container containers, "100_100_50_60_60" %}
-          <div class="side-border-title side-border-title--sub">
-            <h2 class="h1">
-              {% markdown %}{{ services_title }} {% endmarkdown %}
-            </h2>
-          </div>
-          {% end_container %}
-          {% end_responsive %}
-          <div class="services__spacer-inner-1"></div>
-          {% responsive %}
-          {% container containers, "100_100_100_40_40" %}
-          {% end_container %}
-          {% container containers, "100_100_100_60_60" %}
-          <div class="services__content">
-            {% responsive %}
-            {% for card in cards_list %}
-            {% container containers, "100_100_50_50_50" %}
-            <div class="card">
-              <div class="card__spacer-top"></div>
-              <div class="card__inner">
-                <h3 class="h2">
-                  {% markdown %}{{ card.title }}{% endmarkdown %}
-                </h3>
-                <div class="card__spacer-inner-1"></div>
-                <p>{% markdown %}{{ card.text }}{% endmarkdown %}</p>
-                <div class="card__spacer-inner-2"></div>
-                <div class="mt-auto">
-                  {% buffer %}
-                  <a class="button-1" href="{{ card.link }}">{{buttons.read_more}}</a>
-                  {% end_buffer %}
-                </div>
-              </div>
-              <div class="card__spacer-bottom"></div>
-            </div>
-            {% end_container %}
-            {% endfor %}
-            {% end_responsive %}
-          </div>
-          {% end_container %}
-          <div class="card__spacer-bottom"></div>
-        </section>
-      </div>
-
-      <div class="banner">
-        <section>
-          <div class="banner__spacer-top"></div>
-          <div class="banner__max-width">
-            <h2 class="h3 text-center text-white">{% markdown %}{{ banner.heading }}{% endmarkdown %}</h2>
-            <div class="spacer-16"></div>
-            <a class="button-2" href="{{ banner.link }}">{{ buttons.contact_us }}</a>
-          </div>
-          <div class="banner__spacer-bottom"></div>
-        </section>
-      </div>
-
-      <div class="proposal">
-        <span id="about-us"></span>
-        <section>
-          {% responsive %}
-            {% container containers, "100_100_100_35_35" %}
-              <div class="proposal__heading">
-                <h2>
-                  {% markdown %}{{ proposal.heading }}{% endmarkdown %}
-                </h2>
-              </div>
-            {% end_container %}
-            {% container containers, "100_100_100_65_65" %}
-              <div class="proposal__content">
-                <div class="proposal__spacer-top"></div>
-                <p>
-                  {% markdown %}{{ proposal.text }}{% endmarkdown %}
-                </p>
-                <div class="proposal__spacer-bottom"></div>
-              </div>
-            {% end_container %}
-          {% end_responsive %}
-        </section>
-      </div>
-
-      <div class="contact-us">
-        <span id="contact-us"></span>
-        <section>
-          {% buffer buffer, "max_width" %}
-          <div class="contact-us__spacer-top"></div>
-          <h2 class="text-white">
-            {% markdown %}{{ contact.heading }}{% endmarkdown %}
-          </h2>
-          <div class="contact-us__spacer-inner-1"></div>
-          {% responsive %}
-            {% container containers, "100_100_100_50_50" %}
-            <div class="contact-us__address">
-              <address>
-                <p> If you are searching</p>
-                <ul>
-                  <li> insights for your digital transformation,</li>
-                  <li> a partner for harmonising your data,</li>
-                  <li> a direct contact with our deep-stack developers</li>
-                </ul>
-                <p> or have any other questions (pricing, implementation).</p>
-                <a class="p" href="mailto:contact@meddea.global"> contact@meddea.global </a>
-              </address>
-            </div>
-          {% end_container %}
-          {% container containers, "100_100_100_50_50" %}
-            <div class="contact-us__address">
-            <address>
-              <h3>{% markdown %}{{ contact.subtitle }}{% endmarkdown %}</h3>
-              <p>{% markdown %}{{ contact.text }}{% endmarkdown %}</p>
-            </address>
-            </div>
-          {% end_container %}
-          {% end_responsive %}
-          <div class="contact-us__spacer-bottom"></div>
-          {% end_buffer %}
-        </section>
-      </div>
-    {% end_max_width %}
-
+      VAT CHE-244.291.045<br><br>
+      E-mail: <a href="mailto:contact@meddea.swiss">contact@meddea.swiss<a>
+    </h4>
     {{ content | safe }}
 
-    {% include 'partials/footer.njk' %}
     <!-- Header -->
     <script src="/js/utils.js"></script>
     <script src="/js/header.js"></script>
